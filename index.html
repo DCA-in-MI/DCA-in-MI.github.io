@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DCA-MI 2026: Data Curation and Augmentation in Medical Imaging workshop at ECCV 2026.">
+  <title>DCA-MI 2026 | Data Curation &amp; Augmentation in Medical Imaging</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,30..100;1,9..144,300..700,30..100&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/workshop-logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-shell">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span>DCA-MI (2nd Ed.) | Data Curation &amp; Augmentation in Medical Imaging | ECCV 2026</span>
+        <span class="topbar-links">
+          <a href="https://dca-in-mi.github.io/2024/">2024 archive</a>
+          <a href="#news" data-route-link="news">Subscribe</a>
+        </span>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Primary">
+      <div class="container nav-inner">
+        <a class="brand" href="#home" data-route-link="home" aria-label="DCA-MI 2026 home">
+          <img src="assets/workshop-logo.png" alt="DCA-MI workshop logo" class="brand-logo">
+          <span class="brand-text">
+            <span class="brand-name">DCA-MI</span>
+            <span class="brand-meta">2nd Edition | ECCV 2026</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span>Menu</span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><button type="button" data-route="home">Home</button></li>
+          <li><button type="button" data-route="dates">Important Dates</button></li>
+          <li><button type="button" data-route="cfp">Call for Papers</button></li>
+          <li><button type="button" data-route="papers">Accepted Papers</button></li>
+          <li><button type="button" data-route="program">Program</button></li>
+          <li><button type="button" data-route="awards">Awards</button></li>
+          <li><button type="button" data-route="organizers">Organizers</button></li>
+          <li><button type="button" data-route="faqs">FAQs</button></li>
+          <li><button type="button" data-route="news">News</button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section class="page is-active" id="page-home" data-page="home" aria-labelledby="home-title">
+      <div class="container">
+        <div class="hero-meta">
+          <span class="eyebrow">European Conference on Computer Vision | ECCV 2026 | 2nd Edition</span>
+          <span class="mono muted">Vol. 02 / No. 01 / 2026</span>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1 id="home-title">
+              Data Curation<br>
+              <span class="ital">&amp; Augmentation</span><br>
+              in Medical Imaging<span class="ochre">.</span>
+            </h1>
+            <p class="lede">
+              A full-day ECCV workshop on data as the bottleneck for robust surgical computer vision - from curated multi-endoscope datasets to large multimodal clinical benchmarks and surgical visual understanding.
+            </p>
+            <div class="meta-row">
+              <span>October 2026 | ECCV venue TBA</span>
+              <span>Full day</span>
+              <span>Successor to CVPR 2024</span>
+            </div>
+            <div class="cta-row">
+              <button class="btn primary" type="button" data-route="cfp">Submit a paper <span aria-hidden="true">&rarr;</span></button>
+              <button class="btn secondary" type="button" data-route="program">View program</button>
+            </div>
+          </div>
+
+          <div class="hero-figures" aria-label="Featured dataset figures">
+            <figure class="figure-tile">
+              <img src="assets/imed-figure-6.jpg" alt="iMED figure showing RGB views, depth maps, aligned point clouds, geometry, and tool labels.">
+              <figcaption><span>FIG. 01</span><strong>iMED RGB / Depth / Geometry</strong></figcaption>
+            </figure>
+            <figure class="figure-tile">
+              <img src="assets/climb-overview-selected.jpg" alt="CLIMB benchmark overview with modality coverage, dataset focus areas, code, and sample data.">
+              <figcaption><span>FIG. 02</span><strong>CLIMB benchmark overview</strong></figcaption>
+            </figure>
+            <figure class="figure-tile">
+              <img src="assets/surgvu-tasks.jpg" alt="SurgVU sample frames across multiple surgical tasks.">
+              <figcaption><span>FIG. 03</span><strong>SurgVU surgical tasks</strong></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <section class="container stats-strip" aria-label="Workshop facts">
+        <div><strong>II</strong><span>Edition</span><small>After CVPR 2024</small></div>
+        <div><strong>3</strong><span>Datasets</span><small>iMED | CLIMB | SurgVU</small></div>
+        <div><strong>4</strong><span>Themes</span><small>Curation | Restoration | 3D | Autonomy</small></div>
+        <div><strong>4</strong><span>Keynotes</span><small>Confirmed program</small></div>
+        <div><strong>1</strong><span>Day</span><small>At ECCV 2026</small></div>
+      </section>
+
+      <div class="section-div container">
+        <div><span class="mono">§ 01</span><span class="eyebrow">About the workshop</span></div>
+        <span class="mono muted">PP. 01 - 04</span>
+      </div>
+      <section class="container editorial-grid">
+        <div>
+          <h2>From scarce data<br><span class="ital">to safer medicine.</span></h2>
+          <div class="accent-line"></div>
+          <p class="side-note">A focused program of keynotes, panels, peer-reviewed papers, and dataset spotlights.</p>
+        </div>
+        <div>
+          <p class="dropcap">
+            Reliable medical systems depend on data quality as much as model novelty. Intraoperative video is scarce, expensive to annotate, and ethically restricted. DCA-MI advances data-centric methods and benchmarks as first-class research contributions, with particular attention to surgical scene understanding, endoscopic geometry, and clinical translation.
+          </p>
+          <blockquote>
+            <span></span>
+            <p>"The bottleneck is rarely the model. It is almost always the data."</p>
+            <cite>Organizing Committee</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <div class="section-div container">
+        <div><span class="mono">§ 02</span><span class="eyebrow">Featured speakers</span></div>
+        <span class="mono muted">Keynotes &amp; panel</span>
+      </div>
+      <section class="container">
+        <h2 class="bigtitle">Confirmed keynotes<br><span class="ital">+ panel discussion.</span></h2>
+        <div class="speaker-grid">
+          <article><img src="assets/people/sophia-bano.jpg" alt="Sophia Bano"><h3>Sophia Bano</h3><p>UCL, United Kingdom</p><span>Robot vision and scene understanding for minimally invasive surgery.</span></article>
+          <article><img src="assets/people/lena-maier-hein.webp" alt="Lena Maier-Hein"><h3>Lena Maier-Hein</h3><p>DKFZ / Heidelberg University, Germany</p><span>Surgical data science, benchmarking, and reproducible evaluation.</span></article>
+          <article><img src="assets/people/jose-montiel.jpg" alt="José M. M. Montiel"><h3>José M. M. Montiel</h3><p>Universidad de Zaragoza, Spain</p><span>Visual SLAM, deformable SLAM for endoscopy, EndoMapper.</span></article>
+          <article><img src="assets/people/mengya-xu.png" alt="Mengya Xu"><h3>Mengya Xu</h3><p>CUHK, Hong Kong</p><span>Medical and surgical AI across MICCAI, IPCAI, and ICRA.</span></article>
+        </div>
+      </section>
+
+      <div class="section-div container">
+        <div><span class="mono">§ 03</span><span class="eyebrow">Advisory board</span></div>
+        <span class="mono muted">Expanding roster</span>
+      </div>
+      <section class="container advisory-board home-advisory">
+        <article class="featured-advisor">
+          <img src="assets/people/stefanie-speidel.jpg" alt="Stefanie Speidel">
+          <span>Featured advisor</span>
+          <h3>Stefanie Speidel</h3>
+          <p>NCT Dresden professor working on surgical data science, computer-assisted surgery, robotic vision, and AI-enabled clinical translation.</p>
+          <a href="https://www.nct-dresden.de/en/research/departments-and-groups/translational-surgical-oncology/team/stefanie-speidel">Profile</a>
+        </article>
+        <article class="advisor-placeholder">
+          <span>Additional advisors</span>
+          <h3>More to be announced</h3>
+          <p>The board will expand as additional senior advisors confirm participation.</p>
+        </article>
+      </section>
+
+      <div class="section-div container">
+        <div><span class="mono">§ 04</span><span class="eyebrow">Areas of focus</span></div>
+        <span class="mono muted">4 themes</span>
+      </div>
+      <section class="container">
+        <h2 class="bigtitle">What we want<br><span class="ital">to talk about.</span></h2>
+        <div class="topic-list">
+          <article><span>01</span><h3>Dataset Design &amp; Curation</h3><p>Acquisition protocols, selection strategies, annotation at scale, bias auditing, and privacy-aware sharing.</p></article>
+          <article><span>02</span><h3>Visual Degradation &amp; Restoration</h3><p>Smoke, blood, specularities, blur, and super-resolution measured against downstream clinical tasks.</p></article>
+          <article><span>03</span><h3>3D Understanding, Neural Rendering &amp; SLAM</h3><p>Endoscopic visual odometry, multi-camera reconstruction, deformable scene representations, and sim-to-real evaluation.</p></article>
+          <article><span>04</span><h3>Autonomous Surgery &amp; Clinical Translation</h3><p>Workflow labels, imitation learning, safety-critical edges, federated evaluation, and drift monitoring.</p></article>
+        </div>
+
+        <div class="topic-matrix" aria-labelledby="matrix-title">
+          <div class="matrix-grid" role="grid" aria-label="Topic crosswalk">
+            <div class="matrix-corner" id="matrix-title">Crosswalk</div>
+            <div class="matrix-head">Curation</div>
+            <div class="matrix-head">Restoration</div>
+            <div class="matrix-head">3D &amp; SLAM</div>
+            <div class="matrix-head">Autonomy</div>
+            <div class="matrix-row">Curation</div>
+            <button type="button" data-pair="Curation|Curation|Direct work on acquisition, labeling, splits, provenance, and data release practices."></button>
+            <button type="button" data-pair="Curation|Restoration|Curated degradation splits: smoke, blood, blur, and specular artifacts with honest before-after baselines."></button>
+            <button type="button" data-pair="Curation|3D & SLAM|Multi-camera, calibrated datasets that make geometric evaluation possible instead of incidental."></button>
+            <button type="button" data-pair="Curation|Autonomy|Workflow and skill-labeled corpora that survive cross-site and cross-system evaluation."></button>
+            <div class="matrix-row">Restoration</div>
+            <button type="button" data-pair="Restoration|Curation|Curated degradation splits: smoke, blood, blur, and specular artifacts with honest before-after baselines."></button>
+            <button type="button" data-pair="Restoration|Restoration|Direct work on restoring clinically useful signal without erasing important evidence."></button>
+            <button type="button" data-pair="Restoration|3D & SLAM|Does restoring smoke or specularity actually help downstream 3D? Show the deltas."></button>
+            <button type="button" data-pair="Restoration|Autonomy|Restoration as a safety layer for clinical deployment and autonomous task execution."></button>
+            <div class="matrix-row">3D &amp; SLAM</div>
+            <button type="button" data-pair="3D & SLAM|Curation|Multi-camera, calibrated datasets that make geometric evaluation possible instead of incidental."></button>
+            <button type="button" data-pair="3D & SLAM|Restoration|Does restoring smoke or specularity actually help downstream 3D? Show the deltas."></button>
+            <button type="button" data-pair="3D & SLAM|3D & SLAM|Direct work on geometry, camera pose, deformable reconstruction, and novel view synthesis."></button>
+            <button type="button" data-pair="3D & SLAM|Autonomy|Scene representations that feed planning, navigation, imitation learning, and AR guidance."></button>
+            <div class="matrix-row">Autonomy</div>
+            <button type="button" data-pair="Autonomy|Curation|Workflow and skill-labeled corpora that survive cross-site and cross-system evaluation."></button>
+            <button type="button" data-pair="Autonomy|Restoration|Restoration as a safety layer for clinical deployment and autonomous task execution."></button>
+            <button type="button" data-pair="Autonomy|3D & SLAM|Scene representations that feed planning, navigation, imitation learning, and AR guidance."></button>
+            <button type="button" data-pair="Autonomy|Autonomy|Direct work on surgical autonomy, clinical translation, robustness, and monitoring."></button>
+          </div>
+          <aside class="matrix-panel" aria-live="polite">
+            <span class="mono muted">Crosswalk</span>
+            <h3>Four themes, ten crossings.</h3>
+            <p>Hover or focus any cell to see the kind of submission we expect at that intersection.</p>
+          </aside>
+        </div>
+
+      </section>
+
+      <div class="section-div container">
+        <div><span class="mono">§ 05</span><span class="eyebrow">Featured datasets</span></div>
+        <span class="mono muted">Curation case studies</span>
+      </div>
+      <section class="container dataset-section">
+        <div class="section-intro">
+          <h2>Three benchmarks,<br><span class="ital">three data lessons.</span></h2>
+          <p>Each spotlight treats a dataset as a research contribution: acquisition decisions, ground-truth design, split strategy, and evaluation pitfalls.</p>
+        </div>
+        <div class="dataset-grid">
+          <article class="dataset-card dataset-primary">
+            <figure><img src="assets/imed-figure-6.jpg" alt="iMED processing figure with RGB, depth, aligned point clouds, geometry, and tool labels."></figure>
+            <div>
+              <span class="mono ochre">PRIMARY SPOTLIGHT</span>
+              <h3>iMED</h3>
+              <p class="dataset-sub">A Multi-Endoscope Dataset for Surgical 3D Perception</p>
+              <div class="stat-grid">
+                <span>340 sequences</span><span>~170K frame pairs</span><span>60 FPS</span><span>19 methods</span><span>10 ex vivo organs</span><span>18 cadaveric scenes</span><span>10 live porcine procedures</span><span>4 camera streams</span>
+              </div>
+              <p>iMED focuses the workshop on synchronized, dual-view, deformable, specular surgical scenes. The dataset is designed to stress test visual geometry, photogrammetry, and endoscopic reconstruction beyond rigid-world assumptions.</p>
+            </div>
+          </article>
+
+          <article class="dataset-card">
+            <figure><img src="assets/climb-overview-selected.jpg" alt="Overview of the CLIMB benchmark and code."></figure>
+            <div>
+              <span class="mono ochre">FEATURED DATASET</span>
+              <h3>CLIMB</h3>
+              <p class="dataset-sub">Clinical Large-scale Integrative Multimodal Benchmark</p>
+              <div class="stat-grid"><span>4.51M samples</span><span>19.01TB</span><span>33 institutions</span><span>13 domains</span></div>
+              <p>A multimodal clinical benchmark spanning imaging, language, time series, graph, and multimodal patient data.</p>
+              <a href="https://arxiv.org/abs/2503.07667">arXiv:2503.07667</a>
+            </div>
+          </article>
+
+          <article class="dataset-card">
+            <figure><img src="assets/surgvu-tasks.jpg" alt="SurgVU sample frames from multiple surgical tasks."></figure>
+            <div>
+              <span class="mono ochre">FEATURED DATASET</span>
+              <h3>SurgVU</h3>
+              <p class="dataset-sub">Surgical Visual Understanding Dataset</p>
+              <div class="stat-grid"><span>840 hours</span><span>~18M frames</span><span>280 clips</span><span>12 tools</span><span>155 sessions</span><span>8 tasks</span></div>
+              <p>Robot-assisted surgical video with tool and task labels, built for visual understanding under operating-room scale and imbalance.</p>
+              <a href="https://arxiv.org/abs/2501.09209">arXiv:2501.09209</a>
+            </div>
+          </article>
+        </div>
+        <p class="source-note">Figure sources: iMED local paper assets; CLIMB Figure 2 from arXiv:2503.07667; SurgVU Figure 1 from arXiv:2501.09209.</p>
+      </section>
+
+      <div class="section-div container">
+        <div><span class="mono">§ 06</span><span class="eyebrow">Calendar</span></div>
+        <span class="mono muted">All times AOE</span>
+      </div>
+      <section class="container split-section">
+        <h2>Important<br><span class="ital">dates.</span></h2>
+        <div class="date-table compact">
+          <div><span>15 May 2026</span><strong>Call for papers posted</strong><em>Open</em></div>
+          <div><span>01 Jul 2026</span><strong>Paper submission deadline</strong><em>Hard</em></div>
+          <div><span>01 Aug 2026</span><strong>Notification of acceptance</strong><em>Email</em></div>
+          <div><span>15 Aug 2026</span><strong>Camera-ready due</strong><em>Final</em></div>
+          <div><span>Oct 2026</span><strong>Workshop day at ECCV 2026</strong><em>In person</em></div>
+        </div>
+      </section>
+
+    </section>
+
+    <section class="page" id="page-dates" data-page="dates" aria-labelledby="dates-title">
+      <div class="container page-hero">
+        <div><span class="mono">§ 02</span><span class="eyebrow">Important Dates</span><span class="mono muted">All times AOE</span></div>
+        <h1 id="dates-title">Calendar<br><span class="ital">at a glance</span><span class="ochre">.</span></h1>
+      </div>
+      <section class="container">
+        <div class="deadline-meter">
+          <div class="meter-head"><span class="eyebrow muted">Live countdown</span><span id="next-deadline" class="mono">Calculating...</span></div>
+          <div class="meter-track" aria-hidden="true"><span id="meter-fill"></span></div>
+        </div>
+        <div class="timeline">
+          <article><span>15 May 2026</span><h3>Call for papers posted</h3><p>OpenReview information, templates, and final submission instructions become available.</p></article>
+          <article class="hard"><span>01 Jul 2026</span><h3>Paper deadline</h3><p>Full papers, extended abstracts, and dataset submissions due by 23:59 AOE.</p></article>
+          <article><span>01 Aug 2026</span><h3>Acceptance notifications</h3><p>Decisions sent by email with presentation type.</p></article>
+          <article><span>15 Aug 2026</span><h3>Camera-ready due</h3><p>Final PDFs uploaded and program frozen.</p></article>
+          <article><span>Oct 2026</span><h3>Workshop day at ECCV</h3><p>Final date confirmed once the ECCV master schedule lands.</p></article>
+        </div>
+      </section>
+    </section>
+
+    <section class="page" id="page-cfp" data-page="cfp" aria-labelledby="cfp-title">
+      <div class="container page-hero">
+        <div><span class="mono">§ 03</span><span class="eyebrow">Call for Papers</span><span class="mono muted">Open Spring 2026</span></div>
+        <h1 id="cfp-title">Submit your<br><span class="ital">research</span><span class="ochre">.</span></h1>
+      </div>
+      <section class="container cfp-layout">
+        <aside class="toc" aria-label="Call for papers contents">
+          <a href="#cfp-scope">01 Scope</a>
+          <a href="#cfp-topics">02 Topics</a>
+          <a href="#cfp-format">03 Format</a>
+          <a href="#cfp-review">04 Review</a>
+          <a href="#cfp-ethics">05 Ethics</a>
+        </aside>
+        <div class="cfp-body">
+          <article id="cfp-scope"><span class="eyebrow muted">01 - Scope</span><h2>The data itself is the subject.</h2><p class="dropcap">We invite contributions across curation, augmentation, restoration, 3D perception, learning with limited or imperfect data, and clinical translation. Submissions may be empirical, methodological, position-style, or new datasets and benchmarks with reproducible baselines.</p></article>
+          <article id="cfp-topics"><span class="eyebrow muted">02 - Topics</span><h2>Cross-theme work is welcome.</h2><p>We are especially interested in work that shows how upstream data decisions propagate into downstream clinical and surgical performance.</p></article>
+          <article id="cfp-format"><span class="eyebrow muted">03 - Format</span><h2>Three submission tracks.</h2><p>Full papers, extended abstracts, and dataset / benchmark submissions are welcome. Final page limits and template links will be posted with the OpenReview call.</p></article>
+          <article id="cfp-review"><span class="eyebrow muted">04 - Review</span><h2>Double-blind review.</h2><p>Each submission receives technical and domain review, with dataset papers evaluated for provenance, license clarity, and reproducibility.</p></article>
+          <article id="cfp-ethics"><span class="eyebrow muted">05 - Ethics</span><h2>Provenance is a first-class concern.</h2><p>All datasets must document source, consent basis, licensing, and known coverage limits. Submissions with unclear protected-data handling may be desk-rejected.</p></article>
+        </div>
+      </section>
+    </section>
+
+    <section class="page" id="page-papers" data-page="papers" aria-labelledby="papers-title">
+      <div class="container page-hero">
+        <div><span class="mono">§ 04</span><span class="eyebrow">Accepted Papers</span><span class="mono muted">Proceedings pending</span></div>
+        <h1 id="papers-title">Proceedings<br><span class="ital">vol. II</span><span class="ochre">.</span></h1>
+      </div>
+      <section class="container">
+        <div class="filter-row" role="group" aria-label="Filter accepted papers">
+          <button type="button" class="chip is-active" data-filter="all">All</button>
+          <button type="button" class="chip" data-filter="oral">Oral</button>
+          <button type="button" class="chip" data-filter="poster">Poster</button>
+          <button type="button" class="chip" data-filter="dataset">Dataset</button>
+        </div>
+        <div class="paper-list">
+          <article data-track="oral"><span>P. 01 | ORAL</span><h3>Accepted papers will appear here after review.</h3><p>Camera-ready PDFs go live after the final program is confirmed.</p></article>
+          <article data-track="dataset"><span>P. 02 | DATASET</span><h3>Dataset and benchmark submissions.</h3><p>Dataset papers will include release notes, license, and baseline links.</p></article>
+          <article data-track="poster"><span>P. 03 | POSTER</span><h3>Poster track.</h3><p>Poster assignments will be published with session times.</p></article>
+        </div>
+      </section>
+    </section>
+
+    <section class="page" id="page-program" data-page="program" aria-labelledby="program-title">
+      <div class="container page-hero">
+        <div><span class="mono">§ 05</span><span class="eyebrow">Program</span><span class="mono muted">Full day</span></div>
+        <h1 id="program-title">Workshop<br><span class="ital">schedule</span><span class="ochre">.</span></h1>
+      </div>
+      <div class="section-div container">
+        <div><span class="mono">05A</span><span class="eyebrow">Schedule</span></div>
+        <span class="mono muted">Time | Session | Format</span>
+      </div>
+      <section class="container schedule">
+        <div class="schedule-head"><span>Time</span><span>Event</span><span>Type</span></div>
+        <article><span>09:00-09:15<small>15 min</small></span><div><h3>Opening remarks</h3><p>Welcome and workshop overview from the organizers.</p></div><em>Opening</em></article>
+        <article><span>09:15-09:45<small>30 min</small></span><div><h3>Keynote 1: Dataset scarcity, design and curation in medical imaging</h3><p>Invited talk on the data bottleneck for robust medical and surgical AI.</p></div><em class="tag-keynote">Keynote</em></article>
+        <article class="dim"><span>09:45-10:30<small>45 min</small></span><div><h3>Coffee Break &amp; Poster Session I</h3><p>Interactive poster session and attendee discussion.</p></div><em class="tag-poster">Poster</em></article>
+        <article><span>10:30-11:30<small>60 min</small></span><div><h3>Oral Session 1: 3D Understanding and Spatial Data</h3><p>Four accepted papers, 15 minutes each.</p></div><em class="tag-oral">Oral</em></article>
+        <article class="dim"><span>11:30-13:00<small>90 min</small></span><div><h3>Break</h3><p>Lunch break.</p></div><em>Break</em></article>
+        <article><span>13:00-13:30<small>30 min</small></span><div><h3>Keynote 2: SLAM, Neural Rendering</h3><p>Invited talk on endoscopic geometry, mapping, and scene representation.</p></div><em class="tag-keynote">Keynote</em></article>
+        <article><span>13:30-14:30<small>60 min</small></span><div><h3>Data Curation for Challenge Session</h3><p>iMED: Multi-Endoscope Dataset | 20 min<br>CLiMB: Benchmark for Colonoscopy SLAM | 20 min<br>SurgVU: Surgical Visual Understanding | 20 min</p></div><em class="tag-dataset">Dataset</em></article>
+        <article class="dim"><span>14:30-15:00<small>30 min</small></span><div><h3>Coffee Break &amp; Poster Session II</h3><p>Second poster block and hallway discussion.</p></div><em class="tag-poster">Poster</em></article>
+        <article><span>15:00-15:30<small>30 min</small></span><div><h3>Keynote 3: Autonomous Surgery and Clinical Translation</h3><p>Invited talk on translating surgical data into robust clinical systems.</p></div><em class="tag-keynote">Keynote</em></article>
+        <article><span>15:30-16:30<small>60 min</small></span><div><h3>Oral Session 2: Visual degradation and restoration</h3><p>Four accepted papers, 15 minutes each.</p></div><em class="tag-oral">Oral</em></article>
+        <article><span>16:30-17:30<small>60 min</small></span><div><h3>Panel: Data for Surgical Autonomy, Clinical Translation</h3><p>Open discussion with invited speakers and organizers.</p></div><em class="tag-panel">Panel</em></article>
+        <article><span>17:30-18:00<small>30 min</small></span><div><h3>Closing Remarks &amp; Awards</h3><p>Best paper, dataset recognition, and closing remarks.</p></div><em>Closing</em></article>
+      </section>
+      <div class="section-div container">
+        <div><span class="mono">05B</span><span class="eyebrow">Speakers</span></div>
+        <span class="mono muted">Keynotes &amp; panel</span>
+      </div>
+      <section class="container speaker-section">
+        <div class="speaker-grid">
+          <article><img src="assets/people/sophia-bano.jpg" alt="Sophia Bano"><h3>Sophia Bano</h3><p>UCL, United Kingdom</p><span>Robot vision and scene understanding for minimally invasive surgery.</span></article>
+          <article><img src="assets/people/lena-maier-hein.webp" alt="Lena Maier-Hein"><h3>Lena Maier-Hein</h3><p>DKFZ / Heidelberg University, Germany</p><span>Dataset scarcity, design, curation, and reproducible surgical data science.</span></article>
+          <article><img src="assets/people/jose-montiel.jpg" alt="José M. M. Montiel"><h3>José M. M. Montiel</h3><p>Universidad de Zaragoza, Spain</p><span>SLAM, neural rendering, deformable reconstruction, and EndoMapper.</span></article>
+          <article><img src="assets/people/mengya-xu.png" alt="Mengya Xu"><h3>Mengya Xu</h3><p>CUHK, Hong Kong</p><span>Autonomous surgery, clinical translation, and medical computer vision.</span></article>
+        </div>
+      </section>
+    </section>
+
+    <section class="page" id="page-awards" data-page="awards" aria-labelledby="awards-title">
+      <div class="container page-hero">
+        <div><span class="mono">§ 06</span><span class="eyebrow">Awards</span><span class="mono muted">Three categories</span></div>
+        <h1 id="awards-title">Honors &amp;<br><span class="ital">recognition</span><span class="ochre">.</span></h1>
+      </div>
+      <section class="container award-list">
+        <article><span>2026 | Best Paper</span><h3>TBD</h3><p>Announced at the closing ceremony.</p></article>
+        <article><span>2026 | Best Dataset</span><h3>TBD</h3><p>Judged on novelty, provenance, license clarity, and reproducible baselines.</p></article>
+        <article><span>2026 | Audience Choice</span><h3>TBD</h3><p>Selected by registered attendees.</p></article>
+      </section>
+    </section>
+
+    <section class="page" id="page-organizers" data-page="organizers" aria-labelledby="organizers-title">
+      <div class="container page-hero">
+        <div><span class="mono">§ 07</span><span class="eyebrow">Organizers</span><span class="mono muted">8 organizers</span></div>
+        <h1 id="organizers-title">The team<br><span class="ital">behind it</span><span class="ochre">.</span></h1>
+      </div>
+      <section class="container organizer-grid">
+        <article><img src="assets/people/fengyi-jiang.jpg" alt="Fengyi Jiang"><span></span><h3>Fengyi Jiang</h3><p>Primary contact | Intuitive Surgical</p></article>
+        <article><img src="assets/people/sierra-bonilla.jpg" alt="Sierra Bonilla"><span></span><h3>Sierra Bonilla</h3><p>iMED dataset lead | UCL Hawkes Institute</p></article>
+        <article><img src="assets/people/javier-morlana.jpg" alt="Javier Morlana"><span></span><h3>Javier Morlana</h3><p>CLiMB benchmark lead | Universidad de Zaragoza</p></article>
+        <article><img src="assets/people/ray-zhang.jpg" alt="Ray Zhang"><span></span><h3>Ray Zhang</h3><p>Organizer | Intuitive Surgical</p></article>
+        <article><img src="assets/people/mary-jin.jpg" alt="Mary Jin"><span></span><h3>Mary Jin</h3><p>Organizer | Intuitive Surgical</p></article>
+        <article class="person-feature"><img src="assets/people/shuoqi-chen.jpg" alt="Shuoqi Chen"><span></span><h3>Shuoqi Chen</h3><p>Computer Vision &amp; Medical Imaging engineer at Intuitive Surgical, specializing in advanced imaging and robotic-assisted procedures. CMU Robotics Institute alumnus; presenter and reviewer across IEEE TRO, IROS, CVPR, and ICML.<br><a href="mailto:shuoqi.chen@intusurg.com">shuoqi.chen@intusurg.com</a></p></article>
+        <article><img src="assets/people/jingpei-lu.jpg" alt="Jingpei Lu"><span></span><h3>Jingpei Lu</h3><p>Research Scientist | Intuitive Surgical</p></article>
+        <article><img src="assets/people/rogerio-nespolo.jpg" alt="Rogerio Nespolo"><span></span><h3>Rogerio Nespolo</h3><p>SurgVU lead | Intuitive Surgical</p></article>
+      </section>
+      <div class="section-div container">
+        <div><span class="mono">07A</span><span class="eyebrow">Advisory Board</span></div>
+        <span class="mono muted">Invitations in progress</span>
+      </div>
+      <section class="container advisory-board">
+        <article class="featured-advisor">
+          <img src="assets/people/stefanie-speidel.jpg" alt="Stefanie Speidel">
+          <span>Featured advisor</span>
+          <h3>Stefanie Speidel</h3>
+          <p>Professor for Translational Surgical Oncology at NCT Dresden, working on surgical data science, computer-assisted surgery, robotic vision, and AI-enabled clinical translation.</p>
+          <a href="https://www.nct-dresden.de/en/research/departments-and-groups/translational-surgical-oncology/team/stefanie-speidel">Profile</a>
+        </article>
+        <article>
+          <img src="assets/people/sophia-bano.jpg" alt="Sophia Bano">
+          <span>Robot vision</span>
+          <h3>Sophia Bano</h3>
+          <p>UCL researcher focused on robot vision and scene understanding for minimally invasive surgery.</p>
+          <a href="https://www.ucl.ac.uk/surgical-robot-vision/sophia-bano">Profile</a>
+        </article>
+        <article>
+          <img src="assets/people/lena-maier-hein.webp" alt="Lena Maier-Hein">
+          <span>Surgical data science</span>
+          <h3>Lena Maier-Hein</h3>
+          <p>DKFZ and Heidelberg University researcher in surgical data science, benchmarking, and reproducible evaluation in medical AI.</p>
+          <a href="https://www.dkfz.de/en/employees/lena-maier-hein">Profile</a>
+        </article>
+        <article>
+          <img src="assets/people/jose-montiel.jpg" alt="José M. M. Montiel">
+          <span>Visual SLAM</span>
+          <h3>José M. M. Montiel</h3>
+          <p>Universidad de Zaragoza researcher known for visual SLAM, ORB-SLAM, deformable SLAM for endoscopy, and the EndoMapper dataset.</p>
+          <a href="https://webdiis.unizar.es/~josemari/">Profile</a>
+        </article>
+        <article>
+          <img src="assets/people/mengya-xu.png" alt="Mengya Xu">
+          <span>Medical AI</span>
+          <h3>Mengya Xu</h3>
+          <p>Chinese University of Hong Kong researcher working on medical and surgical AI, with recent work across MICCAI, IPCAI, and ICRA.</p>
+          <a href="https://www.cse.cuhk.edu.hk/people/faculty/xu-mengya/">Profile</a>
+        </article>
+      </section>
+    </section>
+
+    <section class="page" id="page-faqs" data-page="faqs" aria-labelledby="faqs-title">
+      <div class="container page-hero">
+        <div><span class="mono">§ 08</span><span class="eyebrow">FAQs</span><span class="mono muted">Common questions</span></div>
+        <h1 id="faqs-title">Frequently<br><span class="ital">asked</span><span class="ochre">.</span></h1>
+      </div>
+      <section class="container contact-grid" aria-label="Contact and updates">
+        <article class="contact-card">
+          <span class="eyebrow ochre">Contact</span>
+          <h2>Get in<br><span class="ital">touch.</span></h2>
+          <p>For submission questions, sponsorship inquiries, or program updates, contact the organizing team directly.</p>
+          <a class="contact-email" href="mailto:workshop@dca-in-mi.org">workshop@dca-in-mi.org</a>
+          <div class="share-row" aria-label="Share workshop">
+            <a href="https://twitter.com/intent/tweet?text=DCA-MI%202026%20workshop&url=https%3A%2F%2Fdca-in-mi.github.io%2F2026%2F">Share on X</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdca-in-mi.github.io%2F2026%2F">Share on LinkedIn</a>
+            <a href="mailto:?subject=DCA-MI%202026&body=https://dca-in-mi.github.io/">Share by Email</a>
+          </div>
+        </article>
+        <article class="contact-card">
+          <span class="eyebrow ochre">Updates</span>
+          <h2>Receive<br><span class="ital">updates.</span></h2>
+          <p>Get deadline reminders, speaker announcements, and program updates by emailing the workshop contact.</p>
+          <a class="btn primary contact-cta" href="mailto:workshop@dca-in-mi.org?subject=DCA-MI%202026%20updates">Request updates <span aria-hidden="true">&rarr;</span></a>
+        </article>
+      </section>
+      <section class="container faq-list">
+        <article class="faq is-open">
+          <button type="button" aria-expanded="true"><span>Q. 01</span>Can I submit work also under review at ECCV?<b aria-hidden="true">+</b></button>
+          <div><p>Yes. The workshop is non-archival; concurrent submission is allowed with disclosure.</p></div>
+        </article>
+        <article class="faq">
+          <button type="button" aria-expanded="false"><span>Q. 02</span>Are dataset submissions welcome?<b aria-hidden="true">+</b></button>
+          <div><p>Yes. Dataset and benchmark submissions are a central part of the workshop.</p></div>
+        </article>
+        <article class="faq">
+          <button type="button" aria-expanded="false"><span>Q. 03</span>Do you support remote attendance?<b aria-hidden="true">+</b></button>
+          <div><p>Authors are expected to attend in person. Keynote recording availability depends on speaker consent.</p></div>
+        </article>
+        <p class="note">Still stuck? Write to <a href="mailto:workshop@dca-in-mi.org">workshop@dca-in-mi.org</a>.</p>
+      </section>
+    </section>
+
+    <section class="page" id="page-news" data-page="news" aria-labelledby="news-title">
+      <div class="container page-hero">
+        <div><span class="mono">§ 09</span><span class="eyebrow">News</span><span class="mono muted">Updated weekly</span></div>
+        <h1 id="news-title">What's<br><span class="ital">happening</span><span class="ochre">.</span></h1>
+      </div>
+      <section class="container news-list">
+        <article><time>10 May 2026</time><div><span>Website</span><h3>DCA-MI 2026 design preview launched.</h3><p>The second-edition site now highlights iMED, CLIMB, and SurgVU as featured dataset case studies.</p></div></article>
+        <article><time>15 May 2026</time><div><span>Submissions</span><h3>Call for papers posted.</h3><p>OpenReview information, templates, and final submission instructions will be posted here.</p></div></article>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <img src="assets/workshop-logo.png" alt="DCA-MI workshop logo">
+        <p>Copyright 2026 | Data Curation &amp; Augmentation in Medical Imaging | ECCV</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="mailto:workshop@dca-in-mi.org">Contact</a>
+        <a href="https://arxiv.org/abs/2503.07667">CLIMB</a>
+        <a href="https://arxiv.org/abs/2501.09209">SurgVU</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

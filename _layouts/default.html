@@ -26,7 +26,7 @@
 
     <header class="page-header" role="banner">
         <p style="display:inline-block;">
-            <img class="logo" src="assets/img/workshop_logo.png" alt="workshop_logo.js logo" width="200" height="89" />
+            <img class="logo" src="{{ '/2024/assets/img/workshop_logo.png' | relative_url }}" alt="workshop_logo.js logo" width="200" height="89" />
             <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
         </p>
 
@@ -37,12 +37,12 @@
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
       {% if true %}
-        <a href="https://dca-in-mi.github.io" class="btn">Home</a>
-        <a href="https://dca-in-mi.github.io/call_for_paper.html" class="btn">Call for Paper</a>
-        <a href="https://dca-in-mi.github.io/important_dates.html" class="btn">Important Dates</a>
-        <a href="https://dca-in-mi.github.io/program.html" class="btn">Program</a>
-        <a href="https://dca-in-mi.github.io/people.html" class="btn">Committee</a>
-        <a href="https://dca-in-mi.github.io/news.html" class="btn">News</a>
+        <a href="{{ '/2024/' | relative_url }}" class="btn">Home</a>
+        <a href="{{ '/2024/call_for_paper.html' | relative_url }}" class="btn">Call for Paper</a>
+        <a href="{{ '/2024/important_dates.html' | relative_url }}" class="btn">Important Dates</a>
+        <a href="{{ '/2024/program.html' | relative_url }}" class="btn">Program</a>
+        <a href="{{ '/2024/people.html' | relative_url }}" class="btn">Committee</a>
+        <a href="{{ '/2024/news.html' | relative_url }}" class="btn">News</a>
       {% endif %}
       <!-- {% if site.show_downloads %}
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
