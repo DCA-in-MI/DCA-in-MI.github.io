@@ -41,6 +41,7 @@
 
         <ul class="nav-menu" id="nav-menu">
           <li><button type="button" data-route="home">Home</button></li>
+          <li><button type="button" data-route="datasets">Featured Dataset</button></li>
           <li><button type="button" data-route="dates">Important Dates</button></li>
           <li><button type="button" data-route="cfp">Call for Papers</button></li>
           <li><button type="button" data-route="papers">Accepted Papers</button></li>
@@ -278,6 +279,58 @@
         </div>
       </section>
 
+    </section>
+
+    <section class="page" id="page-datasets" data-page="datasets" aria-labelledby="datasets-title">
+      <div class="container page-hero">
+        <div><span class="mono">§ 02</span><span class="eyebrow">Featured Dataset</span><span class="mono muted">iMED | CLIMB | SurgVU</span></div>
+        <h1 id="datasets-title">Dataset<br><span class="ital">spotlights</span><span class="ochre">.</span></h1>
+      </div>
+      <section class="container dataset-section">
+        <div class="section-intro">
+          <h2>Three benchmarks,<br><span class="ital">three data lessons.</span></h2>
+          <p>Each spotlight treats a dataset as a research contribution: acquisition decisions, ground-truth design, split strategy, and evaluation pitfalls.</p>
+        </div>
+        <div class="dataset-grid">
+          <article class="dataset-card dataset-primary">
+            <figure><img src="assets/imed-figure-6.jpg" alt="iMED processing figure with RGB, depth, aligned point clouds, geometry, and tool labels."></figure>
+            <div>
+              <span class="mono ochre">PRIMARY SPOTLIGHT</span>
+              <h3>iMED</h3>
+              <p class="dataset-sub">A Multi-Endoscope Dataset for Surgical 3D Perception</p>
+              <div class="stat-grid">
+                <span>340 sequences</span><span>~170K frame pairs</span><span>60 FPS</span><span>19 methods</span><span>10 ex vivo organs</span><span>18 cadaveric scenes</span><span>10 live porcine procedures</span><span>4 camera streams</span>
+              </div>
+              <p>iMED focuses the workshop on synchronized, dual-view, deformable, specular surgical scenes. The dataset is designed to stress test visual geometry, photogrammetry, and endoscopic reconstruction beyond rigid-world assumptions.</p>
+            </div>
+          </article>
+
+          <article class="dataset-card">
+            <figure><img src="assets/climb-overview-selected.jpg" alt="Overview of the CLIMB benchmark and code."></figure>
+            <div>
+              <span class="mono ochre">FEATURED DATASET</span>
+              <h3>CLIMB</h3>
+              <p class="dataset-sub">Clinical Large-scale Integrative Multimodal Benchmark</p>
+              <div class="stat-grid"><span>4.51M samples</span><span>19.01TB</span><span>33 institutions</span><span>13 domains</span></div>
+              <p>A multimodal clinical benchmark spanning imaging, language, time series, graph, and multimodal patient data.</p>
+              <a href="https://arxiv.org/abs/2503.07667">arXiv:2503.07667</a>
+            </div>
+          </article>
+
+          <article class="dataset-card">
+            <figure><img src="assets/surgvu-tasks.jpg" alt="SurgVU sample frames from multiple surgical tasks."></figure>
+            <div>
+              <span class="mono ochre">FEATURED DATASET</span>
+              <h3>SurgVU</h3>
+              <p class="dataset-sub">Surgical Visual Understanding Dataset</p>
+              <div class="stat-grid"><span>840 hours</span><span>~18M frames</span><span>280 clips</span><span>12 tools</span><span>155 sessions</span><span>8 tasks</span></div>
+              <p>Robot-assisted surgical video with tool and task labels, built for visual understanding under operating-room scale and imbalance.</p>
+              <a href="https://arxiv.org/abs/2501.09209">arXiv:2501.09209</a>
+            </div>
+          </article>
+        </div>
+        <p class="source-note">Figure sources: iMED local paper assets; CLIMB Figure 2 from arXiv:2503.07667; SurgVU Figure 1 from arXiv:2501.09209.</p>
+      </section>
     </section>
 
     <section class="page" id="page-dates" data-page="dates" aria-labelledby="dates-title">

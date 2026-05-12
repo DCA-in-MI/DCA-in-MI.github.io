@@ -133,7 +133,7 @@ button { color: inherit; }
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 23px;
+  gap: 16px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -144,7 +144,8 @@ button { color: inherit; }
   background: transparent;
   padding: 8px 0;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 12px;
+  white-space: nowrap;
 }
 .nav-menu button::after {
   content: "";
@@ -187,7 +188,7 @@ button { color: inherit; }
 }
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.05fr .95fr;
+  grid-template-columns: .95fr 1.05fr;
   gap: 46px;
   align-items: start;
   padding-top: 44px;
@@ -249,10 +250,10 @@ button { color: inherit; }
 .figure-tile img {
   display: block;
   width: 100%;
-  height: clamp(140px, 12vw, 178px);
+  height: clamp(190px, 16vw, 240px);
   object-fit: contain;
   object-position: center;
-  padding: 10px 0;
+  padding: 6px 0;
   box-sizing: border-box;
   background: #f9f7f1;
   filter: saturate(.94) contrast(.98);
@@ -1148,8 +1149,8 @@ footer {
 
 @media (max-width: 1180px) {
   :root { --margin-x: 34px; }
-  .nav-menu { gap: 14px; }
-  .nav-menu button { font-size: 12px; }
+  .nav-menu { gap: 10px; }
+  .nav-menu button { font-size: 11px; }
   .hero-grid,
   .dataset-primary { grid-template-columns: 1fr; }
   .hero-figures {
@@ -1157,7 +1158,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 14px;
   }
-  .figure-tile img { height: 160px; }
+  .figure-tile img { height: 220px; }
   .figure-tile figcaption {
     align-items: flex-start;
     flex-direction: column;
@@ -1258,7 +1259,7 @@ footer {
     overflow-x: auto;
     padding-bottom: 10px;
   }
-  .figure-tile img { height: 180px; }
+  .figure-tile img { height: 220px; }
   .stats-strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

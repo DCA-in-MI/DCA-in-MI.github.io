@@ -1,5 +1,5 @@
 (function () {
-  const routes = ["home", "dates", "cfp", "papers", "program", "awards", "organizers", "faqs", "news"];
+  const routes = ["home", "datasets", "dates", "cfp", "papers", "program", "awards", "organizers", "faqs", "news"];
   const pages = Array.from(document.querySelectorAll(".page"));
   const navButtons = Array.from(document.querySelectorAll("[data-route]"));
   const routeLinks = Array.from(document.querySelectorAll("[data-route-link]"));
