@@ -1,5 +1,5 @@
 (function () {
-  const routes = ["home", "datasets", "dates", "cfp", "program", "awards", "organizers"];
+  const routes = ["home", "datasets", "dates", "cfp", "program", "organizers"];
   const pages = Array.from(document.querySelectorAll(".page"));
   const navButtons = Array.from(document.querySelectorAll("[data-route]"));
   const routeLinks = Array.from(document.querySelectorAll("[data-route-link]"));
@@ -63,7 +63,7 @@
       { date: new Date("2026-07-01T23:59:00-12:00"), label: "Submission deadline", hard: true },
       { date: new Date("2026-08-01T00:00:00-08:00"), label: "Acceptance notifications" },
       { date: new Date("2026-08-15T00:00:00-08:00"), label: "Camera-ready due" },
-      { date: new Date("2026-10-15T00:00:00-08:00"), label: "Workshop day" }
+      { date: new Date("2026-09-08T00:00:00-08:00"), label: "Workshop begins" }
     ];
     const start = milestones[0].date.getTime();
     const end = milestones[milestones.length - 1].date.getTime();
