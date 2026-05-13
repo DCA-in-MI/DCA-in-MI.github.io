@@ -1,5 +1,5 @@
 (function () {
-  const routes = ["home", "datasets", "dates", "cfp", "papers", "program", "awards", "organizers", "faqs", "news"];
+  const routes = ["home", "datasets", "dates", "cfp", "program", "awards", "organizers"];
   const pages = Array.from(document.querySelectorAll(".page"));
   const navButtons = Array.from(document.querySelectorAll("[data-route]"));
   const routeLinks = Array.from(document.querySelectorAll("[data-route-link]"));
@@ -54,35 +54,6 @@
     });
   }
 
-  function initTopicMatrix() {
-    const panel = document.querySelector(".matrix-panel");
-    const cells = Array.from(document.querySelectorAll("[data-pair]"));
-    if (!panel || !cells.length) return;
-    const defaultHtml = panel.innerHTML;
-
-    function setPanel(cell) {
-      cells.forEach((other) => other.classList.toggle("is-active", other === cell));
-      const [left, right, text] = cell.dataset.pair.split("|");
-      panel.innerHTML = [
-        '<span class="mono muted">Crosswalk</span>',
-        `<h3>${left} <span class="ochre">x</span> ${right}</h3>`,
-        `<p>${text}</p>`
-      ].join("");
-    }
-
-    function resetPanel() {
-      cells.forEach((cell) => cell.classList.remove("is-active"));
-      panel.innerHTML = defaultHtml;
-    }
-
-    cells.forEach((cell) => {
-      cell.addEventListener("mouseenter", () => setPanel(cell));
-      cell.addEventListener("focus", () => setPanel(cell));
-      cell.addEventListener("mouseleave", resetPanel);
-      cell.addEventListener("blur", resetPanel);
-    });
-  }
-
   function initDeadlineMeter() {
     const fill = document.getElementById("meter-fill");
     const nextLabel = document.getElementById("next-deadline");
@@ -114,35 +85,6 @@
     window.setInterval(render, 60000);
   }
 
-  function initPaperFilters() {
-    const buttons = Array.from(document.querySelectorAll("[data-filter]"));
-    const papers = Array.from(document.querySelectorAll(".paper-list [data-track]"));
-    if (!buttons.length || !papers.length) return;
-    buttons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const filter = button.dataset.filter;
-        buttons.forEach((other) => other.classList.toggle("is-active", other === button));
-        papers.forEach((paper) => {
-          paper.classList.toggle("is-hidden", filter !== "all" && paper.dataset.track !== filter);
-        });
-      });
-    });
-  }
-
-  function initFaqs() {
-    document.querySelectorAll(".faq button").forEach((button) => {
-      button.addEventListener("click", () => {
-        const faq = button.closest(".faq");
-        const open = !faq.classList.contains("is-open");
-        faq.classList.toggle("is-open", open);
-        button.setAttribute("aria-expanded", String(open));
-      });
-    });
-  }
-
   setRoute(location.hash.replace("#", ""), false);
-  initTopicMatrix();
   initDeadlineMeter();
-  initPaperFilters();
-  initFaqs();
 })();
