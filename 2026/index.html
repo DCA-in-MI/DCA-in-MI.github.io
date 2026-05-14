@@ -164,10 +164,109 @@
       <section class="container">
         <h2 class="bigtitle">What we want<br><span class="ital">to talk about.</span></h2>
         <div class="topic-list">
-          <article><span>01</span><h3>Clinical imaging and visual understanding</h3><p>How robust visual perception supports diagnostic, interventional, and surgical workflows.</p></article>
-          <article><span>02</span><h3>Data curation and benchmarking for medical AI</h3><p>How dataset design, provenance, and reproducible evaluation shape trustworthy medical AI.</p></article>
-          <article><span>03</span><h3>Multimodal and 3D medical vision</h3><p>How calibrated image, video, and multimodal data enable mapping, reconstruction, and robust representation learning.</p></article>
-          <article><span>04</span><h3>Clinical translation and deployment</h3><p>How curated datasets connect perception research to deployable systems across care settings.</p></article>
+          <details>
+            <summary><span>01</span><h3>Dataset Acquisition, Annotation, and Curation in Medical Imaging</h3><em>Expand</em></summary>
+            <ul>
+              <li>Acquisition pipelines and protocols under real clinical constraints</li>
+              <li>Annotation strategy, labelling instructions, annotator consensus and disagreement</li>
+              <li>Pseudo-ground-truth generation, calibration, and quality control</li>
+              <li>Multi-site, multi-modal, and longitudinal dataset construction</li>
+              <li>Curation transparency: documenting acquisition, exclusions, and demographic coverage</li>
+              <li>Annotation tooling, including interactive and promptable segmentation</li>
+            </ul>
+          </details>
+          <details>
+            <summary><span>02</span><h3>Benchmarking, Evaluation, and Reproducibility</h3><em>Expand</em></summary>
+            <ul>
+              <li>Clinically meaningful metric design for classification, detection, segmentation, and tracking</li>
+              <li>Splits, leakage analysis, and dataset contamination</li>
+              <li>Dataset cleaning, label-error detection, and de-duplication protocols</li>
+              <li>Calibration of metric choice to clinical decision-making</li>
+              <li>Reporting and reproducibility standards for medical CV</li>
+              <li>Human-in-the-loop and clinician-grounded evaluation methodologies</li>
+            </ul>
+          </details>
+          <details>
+            <summary><span>03</span><h3>Privacy, Fairness, and Federated Learning in Medical CV</h3><em>Expand</em></summary>
+            <ul>
+              <li>Anonymization and privacy-preserving dataset release</li>
+              <li>Federated learning under partial or heterogeneous labels; federated benchmarks</li>
+              <li>Bias auditing of training data and trained models</li>
+              <li>Fairness across demographic, anatomical, and rare-subgroup strata</li>
+              <li>Protected-attribute leakage and demographic-shortcut detection</li>
+              <li>Privacy-utility trade-offs in synthetic-data release</li>
+            </ul>
+          </details>
+          <details>
+            <summary><span>04</span><h3>Generative Modeling for Dataset Augmentation</h3><em>Expand</em></summary>
+            <ul>
+              <li>Diffusion models, world models, and controllable generative pipelines for images and video</li>
+              <li>Foundation-model-driven and text-conditioned synthesis</li>
+              <li>Synthetic data for under-represented populations, rare diseases, and minority subgroups</li>
+              <li>Label and structure augmentation: lesion, polyp, vessel, and surgical scene synthesis</li>
+              <li>Modality-specific augmentation, including fan-shape preservation for ultrasound</li>
+              <li>Quantifying generative utility: downstream task validity, controllability, clinical plausibility</li>
+            </ul>
+          </details>
+          <details>
+            <summary><span>05</span><h3>Simulation, Digital Twins, and Sim-to-Real</h3><em>Expand</em></summary>
+            <ul>
+              <li>Physics-based and anatomy-informed simulation</li>
+              <li>Digital twins of patients, organs, operating rooms, and procedures</li>
+              <li>Closed-loop simulation and surgical simulators for training-data generation</li>
+              <li>Sim-to-real adaptation methodologies</li>
+              <li>Patient-specific synthetic priors for downstream tasks</li>
+            </ul>
+          </details>
+          <details>
+            <summary><span>06</span><h3>SLAM, 3D Reconstruction, and Neural Rendering as a Data-Centric Problem</h3><em>Expand</em></summary>
+            <ul>
+              <li>SLAM and SfM for endoscopy, laparoscopy, bronchoscopy, endovascular interventions, IVUS, ICE, and microscopy</li>
+              <li>Neural rendering, Gaussian Splatting, and implicit representations for anatomy</li>
+              <li>Differentiable rendering and patient-specific synthetic priors</li>
+              <li>Calibration, depth, and pose estimation under deformation, smoke, and reflection</li>
+              <li>Tissue tracking, registration, and intra-operative 2D/3D alignment</li>
+              <li>Dataset and pseudo-GT design choices and their effect on reconstruction benchmarks</li>
+              <li>Generalization across patients, procedures, and imaging modalities</li>
+            </ul>
+          </details>
+          <details>
+            <summary><span>07</span><h3>Closing the Domain Gap: Distribution Shift and Clinical Translation</h3><em>Expand</em></summary>
+            <ul>
+              <li>Sim-to-real gaps and dataset-to-clinic transfer</li>
+              <li>Distribution shift, calibration, and out-of-distribution detection in deployment</li>
+              <li>Robust evaluation: when does benchmark performance actually transfer?</li>
+              <li>Safety, uncertainty quantification, and failure-mode analysis on clinical data</li>
+              <li>Deployment case studies and bench-to-bedside lessons</li>
+              <li>Continual learning and model maintenance after deployment</li>
+              <li>Regulatory and clinically-grounded evaluation methodologies</li>
+            </ul>
+          </details>
+          <details>
+            <summary><span>08</span><h3>Learning with Limited, Imperfect, or Heterogeneous Data</h3><em>Expand</em></summary>
+            <ul>
+              <li>Self-, semi-, weakly-, and un-supervised learning for medical imaging</li>
+              <li>Few-shot, zero-shot, and in-context learning</li>
+              <li>Foundation-model adaptation: vision and vision-language models for clinical tasks</li>
+              <li>Domain adaptation, generalization, and continual learning across sites and scanners</li>
+              <li>Noisy and weak label handling; learning from EMR-derived labels</li>
+              <li>Active learning and interactive segmentation</li>
+              <li>Uncertainty quantification under noisy or incomplete supervision</li>
+            </ul>
+          </details>
+          <details>
+            <summary><span>09</span><h3>Multi-Modal Datasets and Models for Autonomous Surgery</h3><em>Expand</em></summary>
+            <ul>
+              <li>Beyond imaging: control inputs, robot kinematics, force/torque, eye-gaze, IMU</li>
+              <li>Synchronized multi-modal acquisition pipelines for surgical procedures</li>
+              <li>Multi-modal fusion architectures and benchmarks</li>
+              <li>Datasets and tooling for autonomous surgery research</li>
+              <li>Workflow recognition, action segmentation, and surgical phase understanding from multi-modal signals</li>
+              <li>Tool-tissue interaction modelling and contact estimation</li>
+              <li>Closed-loop control and decision-making informed by multi-modal data</li>
+              <li>Vision-language models and multimodal reasoning for the operating room</li>
+            </ul>
+          </details>
         </div>
       </section>
 
