@@ -1,5 +1,5 @@
 (function () {
-  const routes = ["home", "datasets", "dates", "cfp", "program", "organizers"];
+  const routes = ["home", "datasets", "dates", "cfp", "organizers"];
   const pages = Array.from(document.querySelectorAll(".page"));
   const navButtons = Array.from(document.querySelectorAll("[data-route]"));
   const routeLinks = Array.from(document.querySelectorAll("[data-route-link]"));
@@ -42,7 +42,7 @@
   });
   window.addEventListener("hashchange", () => {
     const hash = location.hash.replace("#", "");
-    if (routes.includes(hash)) setRoute(hash, true);
+    setRoute(hash, true);
   });
 
   if (navToggle && navMenu) {

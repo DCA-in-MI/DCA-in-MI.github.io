@@ -258,6 +258,45 @@ button { color: inherit; }
   background: #f9f7f1;
   filter: saturate(.94) contrast(.98);
 }
+.challenge-figure {
+  min-height: 275px;
+  background:
+    linear-gradient(90deg, rgba(38, 85, 78, .08) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(38, 85, 78, .08) 1px, transparent 1px),
+    #f7f2e8;
+  background-size: 28px 28px;
+}
+.challenge-mark {
+  display: grid;
+  min-height: 275px;
+  padding: 28px;
+  align-content: center;
+  gap: 12px;
+  border: 10px solid rgba(38, 85, 78, .08);
+  color: var(--forest);
+}
+.figure-tile .challenge-mark {
+  min-height: clamp(190px, 16vw, 240px);
+}
+.challenge-mark span,
+.challenge-mark em {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.challenge-mark strong {
+  max-width: 360px;
+  font-family: var(--display);
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 400;
+  line-height: .95;
+}
+.challenge-mark em {
+  color: var(--ochre);
+}
 .figure-tile figcaption {
   display: flex;
   justify-content: space-between;
@@ -745,6 +784,12 @@ blockquote cite {
   display: none;
 }
 .organizer-grid article.person-feature img { object-position: 50% 38%; }
+.organizer-grid article.person-bio {
+  justify-content: flex-start;
+}
+.organizer-grid article.person-bio p {
+  line-height: 1.45;
+}
 .speaker-grid h3,
 .organizer-grid h3 {
   margin: 14px 0 4px;
@@ -1330,12 +1375,16 @@ footer {
     font-family: var(--display);
     font-style: italic;
   }
-  .advisory-board span,
-  .advisory-board a {
+  .advisory-board span {
     display: none;
   }
+  .advisory-board a {
+    display: inline-block;
+    font-size: 12px;
+  }
   .advisory-board article.featured-advisor,
-  .organizer-grid article.person-feature { grid-column: auto; }
+  .organizer-grid article.person-feature,
+  .organizer-grid article.person-bio { grid-column: auto; }
   .toc { position: static; }
 }
 

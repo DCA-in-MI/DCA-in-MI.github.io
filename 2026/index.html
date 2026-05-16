@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,30..100;1,9..144,300..700,30..100&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/workshop-logo.png">
-  <link rel="stylesheet" href="styles.css?v=20260514-responsive-cards">
+  <link rel="stylesheet" href="styles.css?v=20260515-launch-bios">
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
@@ -40,10 +40,9 @@
 
         <ul class="nav-menu" id="nav-menu">
           <li><button type="button" data-route="home">Home</button></li>
-          <li><button type="button" data-route="datasets">Featured Dataset</button></li>
+          <li><button type="button" data-route="datasets">Datasets</button></li>
           <li><button type="button" data-route="dates">Important Dates</button></li>
           <li><button type="button" data-route="cfp">Call for Papers</button></li>
-          <li><button type="button" data-route="program">Program</button></li>
           <li><button type="button" data-route="organizers">Organizers</button></li>
         </ul>
       </div>
@@ -66,7 +65,7 @@
               in Medical Imaging<span class="ochre">.</span>
             </h1>
             <p class="lede">
-              An ECCV workshop on the data bottleneck for robust medical imaging AI - from curated image and video datasets to multimodal clinical benchmarks spanning diagnosis, intervention, and surgical care.
+              An ECCV workshop on the data bottleneck for robust medical imaging AI - from curated image and video datasets to multimodal clinical benchmarks spanning diagnosis, intervention, clinical workflows, and translational care.
             </p>
             <div class="meta-row">
               <span>September 8-9, 2026 | ECCV venue TBA</span>
@@ -75,7 +74,7 @@
             </div>
             <div class="cta-row">
               <button class="btn primary" type="button" data-route="cfp">Submit a paper <span aria-hidden="true">&rarr;</span></button>
-              <button class="btn secondary" type="button" data-route="program">View program</button>
+              <button class="btn secondary" type="button" data-route="datasets">View datasets</button>
             </div>
           </div>
 
@@ -84,9 +83,9 @@
               <img src="assets/imed-figure-6.jpg" alt="iMED figure showing RGB views, depth maps, aligned point clouds, geometry, and tool labels.">
               <figcaption><span>FIG. 01</span><strong>iMED RGB / Depth / Geometry</strong></figcaption>
             </figure>
-            <figure class="figure-tile">
-              <img src="assets/climb-overview-selected.jpeg" alt="CLIMB benchmark overview with modality coverage, dataset focus areas, code, and sample data.">
-              <figcaption><span>FIG. 02</span><strong>CLIMB benchmark overview</strong></figcaption>
+            <figure class="figure-tile challenge-figure" aria-label="CLiMB2026 benchmark under development">
+              <div class="challenge-mark" aria-hidden="true"><span>CLiMB2026</span><strong>Colonoscopy Localization &amp; Mapping</strong><em>Preliminary benchmark</em></div>
+              <figcaption><span>FIG. 02</span><strong>CLiMB2026 preview</strong></figcaption>
             </figure>
             <figure class="figure-tile">
               <img src="assets/surgvu-tasks.jpg" alt="SurgVU sample frames across multiple surgical tasks.">
@@ -98,8 +97,8 @@
 
       <section class="container stats-strip" aria-label="Workshop facts">
         <div><strong>II</strong><span>Edition</span><small>After CVPR 2024</small></div>
-        <div><strong>3</strong><span>Datasets</span><small>iMED | CLIMB | SurgVU</small></div>
-        <div><strong>4</strong><span>Invited speakers</span><small>Confirmed program</small></div>
+        <div><strong>3</strong><span>Spotlights</span><small>iMED | CLiMB2026 | SurgVU</small></div>
+        <div><strong>4</strong><span>Invited speakers</span><small>Confirmed talks</small></div>
         <div><strong>8-9</strong><span>Sept</span><small>At ECCV 2026</small></div>
       </section>
 
@@ -111,11 +110,11 @@
         <div>
           <h2>From scarce data<br><span class="ital">to safer medicine.</span></h2>
           <div class="accent-line"></div>
-          <p class="side-note">A focused program of invited talks, peer-reviewed papers, and dataset spotlights.</p>
+          <p class="side-note">A focused workshop of invited talks, peer-reviewed papers, and dataset/benchmark spotlights.</p>
         </div>
         <div>
           <p class="dropcap">
-            Reliable medical systems depend on data quality as much as model novelty. Clinical image, video, and multimodal patient data are scarce, expensive to annotate, heterogeneous, and ethically restricted. DCA-MI advances data-centric methods and benchmarks as first-class research contributions across diagnostic imaging, interventional video, multimodal clinical data, surgical scene understanding, and clinical translation.
+            Reliable medical systems depend on data quality as much as model novelty. Clinical image, video, and multimodal patient data are scarce, expensive to annotate, heterogeneous, and ethically restricted. DCA-MI advances data-centric methods and benchmarks as first-class research contributions across diagnostic imaging, interventional video, multimodal clinical data, clinical scene understanding, and translation.
           </p>
           <blockquote>
             <span></span>
@@ -147,13 +146,13 @@
         <h2 class="bigtitle">Organized by<br><span class="ital">the DCA-MI team.</span></h2>
         <div class="organizer-grid home-organizer-grid">
           <article><img src="assets/people/fengyi-jiang.jpg" alt="Fengyi Jiang"><span></span><h3>Fengyi Jiang</h3><p>Primary contact | Intuitive Surgical</p></article>
-          <article><img src="assets/people/sierra-bonilla.jpg" alt="Sierra Bonilla"><span></span><h3>Sierra Bonilla</h3><p>iMED dataset lead | UCL Hawkes Institute</p></article>
-          <article><img src="assets/people/javier-morlana.jpg" alt="Javier Morlana"><span></span><h3>Javier Morlana</h3><p>CLiMB benchmark lead | Universidad de Zaragoza</p></article>
-          <article><img src="assets/people/ray-zhang.jpg" alt="Ray Zhang"><span></span><h3>Ray Zhang</h3><p>Organizer | Intuitive Surgical</p></article>
-          <article><img src="assets/people/mary-jin.jpg" alt="Mary Jin"><span></span><h3>Mary Jin</h3><p>Organizer | Intuitive Surgical</p></article>
+          <article><img src="assets/people/sierra-bonilla.jpg" alt="Sierra Bonilla"><span></span><h3>Sierra Bonilla</h3><p>iMED dataset lead | UCL Hawkes Institute<br><a href="https://sierrabonilla.com/">Profile</a></p></article>
+          <article><img src="assets/people/javier-morlana.jpg" alt="Javier Morlana"><span></span><h3>Javier Morlana</h3><p>CLiMB2026 lead | Universidad de Zaragoza<br><a href="https://jmorlana.github.io/">Profile</a></p></article>
+          <article><img src="assets/people/ray-zhang.jpg" alt="Xiaorui Zhang"><span></span><h3>Xiaorui Zhang</h3><p>SurgVU Challenge organizer | Intuitive Surgical</p></article>
+          <article><img src="assets/people/mary-jin.jpg" alt="Mary Jin"><span></span><h3>Mary Jin</h3><p>Vision system analyst | Intuitive Surgical</p></article>
           <article><img src="assets/people/shuoqi-chen.jpg" alt="Shuoqi Chen"><span></span><h3>Shuoqi Chen</h3><p>Computer Vision &amp; Medical Imaging engineer | Intuitive Surgical</p></article>
           <article><img src="assets/people/jingpei-lu.jpg" alt="Jingpei Lu"><span></span><h3>Jingpei Lu</h3><p>Research Scientist | Intuitive Surgical</p></article>
-          <article><img src="assets/people/rogerio-nespolo.jpg" alt="Rogerio Nespolo"><span></span><h3>Rogerio Nespolo</h3><p>SurgVU lead | Intuitive Surgical</p></article>
+          <article><img src="assets/people/rogerio-nespolo.jpg" alt="Rogerio Nespolo"><span></span><h3>Rogerio Nespolo</h3><p>Machine learning engineer | Intuitive Surgical</p></article>
         </div>
       </section>
 
@@ -203,7 +202,7 @@
               <li>Diffusion models, world models, and controllable generative pipelines for images and video</li>
               <li>Foundation-model-driven and text-conditioned synthesis</li>
               <li>Synthetic data for under-represented populations, rare diseases, and minority subgroups</li>
-              <li>Label and structure augmentation: lesion, polyp, vessel, and surgical scene synthesis</li>
+              <li>Label and structure augmentation: lesion, organ, vessel, and procedural scene synthesis</li>
               <li>Modality-specific augmentation, including fan-shape preservation for ultrasound</li>
               <li>Quantifying generative utility: downstream task validity, controllability, clinical plausibility</li>
             </ul>
@@ -212,8 +211,8 @@
             <summary><span>05</span><h3>Simulation, Digital Twins, and Sim-to-Real</h3><em>Expand</em></summary>
             <ul>
               <li>Physics-based and anatomy-informed simulation</li>
-              <li>Digital twins of patients, organs, operating rooms, and procedures</li>
-              <li>Closed-loop simulation and surgical simulators for training-data generation</li>
+              <li>Digital twins of patients, organs, care environments, and procedures</li>
+              <li>Closed-loop simulation and clinical simulators for training-data generation</li>
               <li>Sim-to-real adaptation methodologies</li>
               <li>Patient-specific synthetic priors for downstream tasks</li>
             </ul>
@@ -255,16 +254,16 @@
             </ul>
           </details>
           <details>
-            <summary><span>09</span><h3>Multi-Modal Datasets and Models for Autonomous Surgery</h3><em>Expand</em></summary>
+            <summary><span>09</span><h3>Multi-Modal Datasets and Models for Clinical Workflows</h3><em>Expand</em></summary>
             <ul>
-              <li>Beyond imaging: control inputs, robot kinematics, force/torque, eye-gaze, IMU</li>
-              <li>Synchronized multi-modal acquisition pipelines for surgical procedures</li>
+              <li>Beyond imaging: reports, time series, device data, kinematics, eye-gaze, IMU, and structured records</li>
+              <li>Synchronized multi-modal acquisition pipelines for clinical and interventional procedures</li>
               <li>Multi-modal fusion architectures and benchmarks</li>
-              <li>Datasets and tooling for autonomous surgery research</li>
-              <li>Workflow recognition, action segmentation, and surgical phase understanding from multi-modal signals</li>
-              <li>Tool-tissue interaction modelling and contact estimation</li>
+              <li>Datasets and tooling for workflow understanding, assistance, and decision support</li>
+              <li>Workflow recognition, action segmentation, and phase understanding from multi-modal signals</li>
+              <li>Interaction modelling, contact estimation, and event detection</li>
               <li>Closed-loop control and decision-making informed by multi-modal data</li>
-              <li>Vision-language models and multimodal reasoning for the operating room</li>
+              <li>Vision-language models and multimodal reasoning for clinical environments</li>
             </ul>
           </details>
         </div>
@@ -286,16 +285,17 @@
         <article><img src="assets/people/lena-maier-hein.webp" alt="Lena Maier-Hein"><span>Invited speaker</span><h3>Lena Maier-Hein</h3><p>DKFZ and Heidelberg University researcher in surgical data science, benchmarking, and reproducible evaluation.</p></article>
         <article><img src="assets/people/jose-montiel.jpg" alt="José M. M. Montiel"><span>Invited speaker</span><h3>José M. M. Montiel</h3><p>Universidad de Zaragoza researcher known for visual SLAM, deformable SLAM for endoscopy, and EndoMapper.</p></article>
         <article><img src="assets/people/mengya-xu.png" alt="Mengya Xu"><span>Invited speaker</span><h3>Mengya Xu</h3><p>Chinese University of Hong Kong researcher working on medical AI across clinical and surgical applications.</p></article>
+        <article class="advisor-placeholder"><span>Advisor</span><h3>Danail Stoyanov</h3><p>UCL Professor of Robot Vision, Co-Director of the UCL Hawkes Institute, and Royal Academy of Engineering Chair in Emerging Technologies.</p><a href="https://www.oasishub.org.uk/people">Profile</a></article>
       </section>
 
       <div class="section-div container">
-        <div><span class="mono">§ 06</span><span class="eyebrow">Featured datasets</span></div>
+        <div><span class="mono">§ 06</span><span class="eyebrow">Highlighted datasets and challenges</span></div>
         <span class="mono muted">Curation case studies</span>
       </div>
       <section class="container dataset-section">
         <div class="section-intro">
           <h2>Three benchmarks,<br><span class="ital">three data lessons.</span></h2>
-          <p>Each spotlight treats a dataset as a research contribution: acquisition decisions, ground-truth design, split strategy, and evaluation pitfalls.</p>
+          <p>Each spotlight treats a dataset or challenge as a research contribution: acquisition decisions, ground-truth design, split strategy, and evaluation pitfalls.</p>
         </div>
         <div class="dataset-grid">
           <article class="dataset-card dataset-primary">
@@ -303,23 +303,25 @@
             <div>
               <span class="mono ochre">PRIMARY SPOTLIGHT</span>
               <h3>iMED</h3>
-              <p class="dataset-sub">A Multi-Endoscope Dataset for Surgical 3D Perception</p>
+              <p class="dataset-sub">Multi-Endoscope Dataset for 3D Perception</p>
               <div class="stat-grid">
-                <span>340 sequences</span><span>~170K frame pairs</span><span>60 FPS</span><span>19 methods</span><span>10 ex vivo organs</span><span>18 cadaveric scenes</span><span>10 live porcine procedures</span><span>4 camera streams</span>
+                <span>340 sequences</span><span>~170K timepoints</span><span>4 views per timepoint</span><span>2 challenge tasks</span><span>Ex vivo</span><span>Postmortem</span><span>Live settings</span><span>Endoscopic 3D</span>
               </div>
-              <p>iMED focuses the workshop on synchronized, dual-view, deformable, specular surgical scenes. The dataset is designed to stress test visual geometry, photogrammetry, and endoscopic reconstruction beyond rigid-world assumptions.</p>
+              <p>iMED2026 is a MICCAI/EndoVis challenge on synchronized multi-endoscope data, with relative pose estimation and deformable novel view synthesis tracks for endoscopic 3D perception.</p>
+              <a href="https://imed-challenge.github.io/">Challenge site</a>
             </div>
           </article>
 
           <article class="dataset-card">
-            <figure><img src="assets/climb-overview-selected.jpeg" alt="Overview of the CLIMB benchmark and code."></figure>
+            <figure class="challenge-figure" aria-label="CLiMB2026 benchmark under development">
+              <div class="challenge-mark" aria-hidden="true"><span>CLiMB2026</span><strong>Colonoscopy Localization &amp; Mapping</strong><em>Preliminary benchmark</em></div>
+            </figure>
             <div>
-              <span class="mono ochre">FEATURED DATASET</span>
-              <h3>CLIMB</h3>
-              <p class="dataset-sub">Clinical Large-scale Integrative Multimodal Benchmark</p>
-              <div class="stat-grid"><span>4.51M samples</span><span>19.01TB</span><span>33 institutions</span><span>13 domains</span></div>
-              <p>A multimodal clinical benchmark spanning imaging, language, time series, graph, and multimodal patient data.</p>
-              <a href="https://arxiv.org/abs/2503.07667">arXiv:2503.07667</a>
+              <span class="mono ochre">FEATURED BENCHMARK</span>
+              <h3>CLiMB2026</h3>
+              <p class="dataset-sub">Colonoscopy Localization and Mapping Benchmark</p>
+              <div class="stat-grid"><span>Colonoscopy</span><span>Localization</span><span>Mapping</span><span>Under development</span></div>
+              <p>CLiMB2026 is an unpublished benchmark under development for colonoscopy localization and mapping. Public dataset access, paper details, and benchmark statistics will be added after organizer review.</p>
             </div>
           </article>
 
@@ -328,14 +330,14 @@
             <div>
               <span class="mono ochre">FEATURED DATASET</span>
               <h3>SurgVU</h3>
-              <p class="dataset-sub">Surgical Visual Understanding Dataset</p>
+              <p class="dataset-sub">Surgical Visual Understanding Dataset Series</p>
               <div class="stat-grid"><span>840 hours</span><span>~18M frames</span><span>280 clips</span><span>12 tools</span><span>155 sessions</span><span>8 tasks</span></div>
-              <p>Robot-assisted surgical video with tool and task labels, built for visual understanding under operating-room scale and imbalance.</p>
+              <p>SurgVU focuses on large-scale surgical video understanding. DCA-MI highlights it as a dataset case study for real-world video curation and evaluation.</p>
               <a href="https://arxiv.org/abs/2501.09209">arXiv:2501.09209</a>
             </div>
           </article>
         </div>
-        <p class="source-note">Figure sources: iMED local paper assets; CLIMB Figure 2 from arXiv:2503.07667; SurgVU Figure 1 from arXiv:2501.09209.</p>
+        <p class="source-note">Source anchors: iMED official site and Synapse; SurgVU arXiv and Zenodo records. CLiMB2026 details are preliminary and will be updated after organizer review.</p>
       </section>
 
       <div class="section-div container">
@@ -357,13 +359,13 @@
 
     <section class="page" id="page-datasets" data-page="datasets" aria-labelledby="datasets-title">
       <div class="container page-hero">
-        <div><span class="mono">§ 02</span><span class="eyebrow">Featured Dataset</span><span class="mono muted">iMED | CLIMB | SurgVU</span></div>
-        <h1 id="datasets-title">Dataset<br><span class="ital">spotlights</span><span class="ochre">.</span></h1>
+        <div><span class="mono">§ 02</span><span class="eyebrow">Highlighted Datasets and Benchmarks</span><span class="mono muted">iMED | CLiMB2026 | SurgVU</span></div>
+        <h1 id="datasets-title">Dataset and challenge<br><span class="ital">spotlights</span><span class="ochre">.</span></h1>
       </div>
       <section class="container dataset-section">
         <div class="section-intro">
           <h2>Three benchmarks,<br><span class="ital">three data lessons.</span></h2>
-          <p>Each spotlight treats a dataset as a research contribution: acquisition decisions, ground-truth design, split strategy, and evaluation pitfalls.</p>
+          <p>Each spotlight treats a dataset or challenge as a research contribution: acquisition decisions, ground-truth design, split strategy, and evaluation pitfalls.</p>
         </div>
         <div class="dataset-grid">
           <article class="dataset-card dataset-primary">
@@ -371,23 +373,25 @@
             <div>
               <span class="mono ochre">PRIMARY SPOTLIGHT</span>
               <h3>iMED</h3>
-              <p class="dataset-sub">A Multi-Endoscope Dataset for Surgical 3D Perception</p>
+              <p class="dataset-sub">Multi-Endoscope Dataset for 3D Perception</p>
               <div class="stat-grid">
-                <span>340 sequences</span><span>~170K frame pairs</span><span>60 FPS</span><span>19 methods</span><span>10 ex vivo organs</span><span>18 cadaveric scenes</span><span>10 live porcine procedures</span><span>4 camera streams</span>
+                <span>340 sequences</span><span>~170K timepoints</span><span>4 views per timepoint</span><span>2 challenge tasks</span><span>Ex vivo</span><span>Postmortem</span><span>Live settings</span><span>Endoscopic 3D</span>
               </div>
-              <p>iMED focuses the workshop on synchronized, dual-view, deformable, specular surgical scenes. The dataset is designed to stress test visual geometry, photogrammetry, and endoscopic reconstruction beyond rigid-world assumptions.</p>
+              <p>iMED2026 is a MICCAI/EndoVis challenge on synchronized multi-endoscope data, with relative pose estimation and deformable novel view synthesis tracks for endoscopic 3D perception.</p>
+              <a href="https://imed-challenge.github.io/">Challenge site</a>
             </div>
           </article>
 
           <article class="dataset-card">
-            <figure><img src="assets/climb-overview-selected.jpeg" alt="Overview of the CLIMB benchmark and code."></figure>
+            <figure class="challenge-figure" aria-label="CLiMB2026 benchmark under development">
+              <div class="challenge-mark" aria-hidden="true"><span>CLiMB2026</span><strong>Colonoscopy Localization &amp; Mapping</strong><em>Preliminary benchmark</em></div>
+            </figure>
             <div>
-              <span class="mono ochre">FEATURED DATASET</span>
-              <h3>CLIMB</h3>
-              <p class="dataset-sub">Clinical Large-scale Integrative Multimodal Benchmark</p>
-              <div class="stat-grid"><span>4.51M samples</span><span>19.01TB</span><span>33 institutions</span><span>13 domains</span></div>
-              <p>A multimodal clinical benchmark spanning imaging, language, time series, graph, and multimodal patient data.</p>
-              <a href="https://arxiv.org/abs/2503.07667">arXiv:2503.07667</a>
+              <span class="mono ochre">FEATURED BENCHMARK</span>
+              <h3>CLiMB2026</h3>
+              <p class="dataset-sub">Colonoscopy Localization and Mapping Benchmark</p>
+              <div class="stat-grid"><span>Colonoscopy</span><span>Localization</span><span>Mapping</span><span>Under development</span></div>
+              <p>CLiMB2026 is an unpublished benchmark under development for colonoscopy localization and mapping. Public dataset access, paper details, and benchmark statistics will be added after organizer review.</p>
             </div>
           </article>
 
@@ -396,14 +400,14 @@
             <div>
               <span class="mono ochre">FEATURED DATASET</span>
               <h3>SurgVU</h3>
-              <p class="dataset-sub">Surgical Visual Understanding Dataset</p>
+              <p class="dataset-sub">Surgical Visual Understanding Dataset Series</p>
               <div class="stat-grid"><span>840 hours</span><span>~18M frames</span><span>280 clips</span><span>12 tools</span><span>155 sessions</span><span>8 tasks</span></div>
-              <p>Robot-assisted surgical video with tool and task labels, built for visual understanding under operating-room scale and imbalance.</p>
+              <p>SurgVU focuses on large-scale surgical video understanding. DCA-MI highlights it as a dataset case study for real-world video curation and evaluation.</p>
               <a href="https://arxiv.org/abs/2501.09209">arXiv:2501.09209</a>
             </div>
           </article>
         </div>
-        <p class="source-note">Figure sources: iMED local paper assets; CLIMB Figure 2 from arXiv:2503.07667; SurgVU Figure 1 from arXiv:2501.09209.</p>
+        <p class="source-note">Source anchors: iMED official site and Synapse; SurgVU arXiv and Zenodo records. CLiMB2026 details are preliminary and will be updated after organizer review.</p>
       </section>
     </section>
 
@@ -418,10 +422,10 @@
           <div class="meter-track" aria-hidden="true"><span id="meter-fill"></span></div>
         </div>
         <div class="timeline">
-          <article><span>15 May 2026</span><h3>Call for papers posted</h3><p>OpenReview information, templates, and final submission instructions become available.</p></article>
+          <article><span>15 May 2026</span><h3>Call for papers posted</h3><p>Topic list and submission guidance become available; the exact OpenReview portal will be linked once verified.</p></article>
           <article class="hard"><span>01 Jul 2026</span><h3>Paper deadline</h3><p>Full papers, extended abstracts, and dataset submissions due by 23:59 AOE.</p></article>
           <article><span>01 Aug 2026</span><h3>Acceptance notifications</h3><p>Decisions sent by email with presentation type.</p></article>
-          <article><span>15 Aug 2026</span><h3>Camera-ready due</h3><p>Final PDFs uploaded and program frozen.</p></article>
+          <article><span>15 Aug 2026</span><h3>Camera-ready due</h3><p>Final PDFs uploaded and accepted-paper schedule frozen.</p></article>
           <article><span>08-09 Sep 2026</span><h3>Workshop at ECCV</h3><p>DCA-MI 2026 meets during ECCV on September 8-9.</p></article>
         </div>
       </section>
@@ -429,7 +433,7 @@
 
     <section class="page" id="page-cfp" data-page="cfp" aria-labelledby="cfp-title">
       <div class="container page-hero">
-        <div><span class="mono">§ 03</span><span class="eyebrow">Call for Papers</span><span class="mono muted">Open Spring 2026</span></div>
+        <div><span class="mono">§ 03</span><span class="eyebrow">Call for Papers</span><span class="mono muted">OpenReview portal coming soon</span></div>
         <h1 id="cfp-title">Submit your<br><span class="ital">research</span><span class="ochre">.</span></h1>
       </div>
       <section class="container cfp-layout">
@@ -441,16 +445,16 @@
           <a href="#cfp-ethics">05 Ethics</a>
         </aside>
         <div class="cfp-body">
-          <article id="cfp-scope"><span class="eyebrow muted">01 - Scope</span><h2>The data itself is the subject.</h2><p class="dropcap">We invite contributions across curation, augmentation, restoration, 3D perception, learning with limited or imperfect data, and clinical translation. Submissions may be empirical, methodological, position-style, or new datasets and benchmarks with reproducible baselines.</p></article>
-          <article id="cfp-topics"><span class="eyebrow muted">02 - Topics</span><h2>Cross-theme work is welcome.</h2><p>We are especially interested in work that shows how upstream data decisions propagate into downstream clinical performance across imaging domains.</p></article>
-          <article id="cfp-format"><span class="eyebrow muted">03 - Format</span><h2>Three submission tracks.</h2><p>Full papers, extended abstracts, and dataset / benchmark submissions are welcome. Final page limits and template links will be posted with the OpenReview call.</p></article>
+          <article id="cfp-scope"><span class="eyebrow muted">01 - Scope</span><h2>The data itself is the subject.</h2><p class="dropcap">We invite contributions across data curation, augmentation, restoration, benchmarking, 3D perception, multimodal clinical data, learning with limited or imperfect supervision, and clinical translation. Submissions may be empirical, methodological, position-style, or new datasets and benchmarks with reproducible baselines.</p></article>
+          <article id="cfp-topics"><span class="eyebrow muted">02 - Topics</span><h2>Cross-theme work is welcome.</h2><p>We are especially interested in work that shows how upstream data decisions propagate into downstream clinical performance: acquisition, annotation, pseudo-ground-truth generation, quality control, fairness, privacy, synthetic data, simulation, distribution shift, and realistic evaluation.</p></article>
+          <article id="cfp-format"><span class="eyebrow muted">03 - Format</span><h2>Three submission tracks.</h2><p>Full papers, extended abstracts, and dataset / benchmark submissions are welcome. Final page limits, templates, and the exact OpenReview portal will be posted once the venue link is verified.</p></article>
           <article id="cfp-review"><span class="eyebrow muted">04 - Review</span><h2>Double-blind review.</h2><p>Each submission receives technical and domain review, with dataset papers evaluated for provenance, license clarity, and reproducibility.</p></article>
           <article id="cfp-ethics"><span class="eyebrow muted">05 - Ethics</span><h2>Provenance is a first-class concern.</h2><p>All datasets must document source, consent basis, licensing, and known coverage limits. Submissions with unclear protected-data handling may be desk-rejected.</p></article>
         </div>
       </section>
     </section>
 
-    <section class="page" id="page-program" data-page="program" aria-labelledby="program-title">
+    <section class="page" id="page-program" data-page="program" aria-labelledby="program-title" hidden aria-hidden="true">
       <div class="container page-hero">
         <div><span class="mono">§ 05</span><span class="eyebrow">Program</span><span class="mono muted">Schedule draft</span></div>
         <h1 id="program-title">Workshop<br><span class="ital">schedule</span><span class="ochre">.</span></h1>
@@ -466,8 +470,8 @@
         <article class="dim"><span>09:45-10:30<small>45 min</small></span><div><h3>Coffee Break &amp; Poster Session I</h3><p>Interactive poster session and attendee discussion.</p></div><em class="tag-poster">Poster</em></article>
         <article><span>10:30-11:30<small>60 min</small></span><div><h3>Oral Session 1: 3D Understanding and Spatial Data</h3><p>Four accepted papers, 15 minutes each.</p></div><em class="tag-oral">Oral</em></article>
         <article class="dim"><span>11:30-13:00<small>90 min</small></span><div><h3>Break</h3><p>Lunch break.</p></div><em>Break</em></article>
-        <article><span>13:00-13:30<small>30 min</small></span><div><h3>Keynote 2: SLAM, Neural Rendering</h3><p>Invited talk on endoscopic geometry, mapping, and scene representation.</p></div><em class="tag-keynote">Keynote</em></article>
-        <article><span>13:30-14:30<small>60 min</small></span><div><h3>Data Curation for Challenge Session</h3><p>iMED: Multi-Endoscope Dataset | 20 min<br>CLiMB: Benchmark for Colonoscopy SLAM | 20 min<br>SurgVU: Surgical Visual Understanding | 20 min</p></div><em class="tag-dataset">Dataset</em></article>
+        <article><span>13:00-13:30<small>30 min</small></span><div><h3>Keynote 2: SLAM in endoscopy and realistic evaluation</h3><p>Javier's talk connects current endoscopic SLAM work to curated real-data evaluation: blur, low texture, specularities, occlusions, deformation, difficult camera motion, reliable SfM/SLAM pseudo-ground truth, and pseudo-labeling pipelines for ColonMapper and LG/RoMA.</p></div><em class="tag-keynote">Keynote</em></article>
+        <article><span>13:30-14:30<small>60 min</small></span><div><h3>Highlighted Dataset and Benchmark Session</h3><p>iMED2026: Multi-Endoscope Dataset | 20 min<br>CLiMB2026: Colonoscopy Localization and Mapping Benchmark | 20 min<br>SurgVU: Surgical Visual Understanding | 20 min</p></div><em class="tag-dataset">Dataset</em></article>
         <article class="dim"><span>14:30-15:00<small>30 min</small></span><div><h3>Coffee Break &amp; Poster Session II</h3><p>Second poster block and hallway discussion.</p></div><em class="tag-poster">Poster</em></article>
         <article><span>15:00-15:30<small>30 min</small></span><div><h3>Keynote 3: Autonomous Surgery and Clinical Translation</h3><p>Invited talk on translating surgical data into robust clinical systems.</p></div><em class="tag-keynote">Keynote</em></article>
         <article><span>15:30-16:30<small>60 min</small></span><div><h3>Oral Session 2: Visual degradation and restoration</h3><p>Four accepted papers, 15 minutes each.</p></div><em class="tag-oral">Oral</em></article>
@@ -494,13 +498,13 @@
       </div>
       <section class="container organizer-grid">
         <article><img src="assets/people/fengyi-jiang.jpg" alt="Fengyi Jiang"><span></span><h3>Fengyi Jiang</h3><p>Primary contact | Intuitive Surgical</p></article>
-        <article><img src="assets/people/sierra-bonilla.jpg" alt="Sierra Bonilla"><span></span><h3>Sierra Bonilla</h3><p>iMED dataset lead | UCL Hawkes Institute</p></article>
-        <article><img src="assets/people/javier-morlana.jpg" alt="Javier Morlana"><span></span><h3>Javier Morlana</h3><p>CLiMB benchmark lead | Universidad de Zaragoza</p></article>
-        <article><img src="assets/people/ray-zhang.jpg" alt="Ray Zhang"><span></span><h3>Ray Zhang</h3><p>Organizer | Intuitive Surgical</p></article>
-        <article><img src="assets/people/mary-jin.jpg" alt="Mary Jin"><span></span><h3>Mary Jin</h3><p>Organizer | Intuitive Surgical</p></article>
+        <article><img src="assets/people/sierra-bonilla.jpg" alt="Sierra Bonilla"><span></span><h3>Sierra Bonilla</h3><p>iMED dataset lead | UCL Hawkes Institute<br><a href="https://sierrabonilla.com/">Profile</a></p></article>
+        <article><img src="assets/people/javier-morlana.jpg" alt="Javier Morlana"><span></span><h3>Javier Morlana</h3><p>CLiMB2026 lead | Universidad de Zaragoza<br><a href="https://jmorlana.github.io/">Profile</a></p></article>
+        <article class="person-bio"><img src="assets/people/ray-zhang.jpg" alt="Xiaorui Zhang"><span></span><h3>Xiaorui Zhang</h3><p>Machine Learning Engineer at Intuitive Surgical and primary organizer of the SurgVU Challenge at MICCAI 2026. He is also the primary author of SurgiSR4K, the first 4K surgical imaging and video dataset. He holds graduate degrees in Robotics and Computer Science from Johns Hopkins University and has extensive experience in computer vision, video analysis, and vision-language models for medical applications.</p></article>
+        <article class="person-bio"><img src="assets/people/mary-jin.jpg" alt="Mary Jin"><span></span><h3>Mary Jin</h3><p>Vision system analyst at Intuitive Surgical. Her research interests are in computational imaging, specifically the joint design of optics and image processing. She has published in venues such as PNAS, Nature Communications, and CVPR.</p></article>
         <article class="person-feature"><img src="assets/people/shuoqi-chen.jpg" alt="Shuoqi Chen"><span></span><h3>Shuoqi Chen</h3><p>Computer Vision &amp; Medical Imaging engineer at Intuitive Surgical, specializing in advanced imaging and robotic-assisted procedures. CMU Robotics Institute alumnus; presenter and reviewer across IEEE TRO, IROS, CVPR, and ICML.<br><a href="mailto:shuoqi.chen@intusurg.com">shuoqi.chen@intusurg.com</a></p></article>
         <article><img src="assets/people/jingpei-lu.jpg" alt="Jingpei Lu"><span></span><h3>Jingpei Lu</h3><p>Research Scientist | Intuitive Surgical</p></article>
-        <article><img src="assets/people/rogerio-nespolo.jpg" alt="Rogerio Nespolo"><span></span><h3>Rogerio Nespolo</h3><p>SurgVU lead | Intuitive Surgical</p></article>
+        <article class="person-bio"><img src="assets/people/rogerio-nespolo.jpg" alt="Rogerio Nespolo"><span></span><h3>Rogerio Nespolo</h3><p>Machine Learning Engineer at Intuitive Surgical, working at the crossroads of surgical data science and AI. His research focuses on real-time surgical guidance and surgeon skill assessment for eye surgery and robot-assisted procedures using multiple data modalities, including image, kinematics, and visual attention, through computer vision and deep learning. His interests also include the investigation of biased datasets in the surgical field.</p></article>
       </section>
       <div class="section-div container">
         <div><span class="mono">07A</span><span class="eyebrow">Advisory Board</span></div>
@@ -542,6 +546,12 @@
           <p>Chinese University of Hong Kong researcher working on medical AI across clinical and surgical applications, with recent work across MICCAI, IPCAI, and ICRA.</p>
           <a href="https://www.cse.cuhk.edu.hk/people/faculty/xu-mengya/">Profile</a>
         </article>
+        <article class="advisor-placeholder">
+          <span>Robot vision</span>
+          <h3>Danail Stoyanov</h3>
+          <p>UCL Professor of Robot Vision, Co-Director of the UCL Hawkes Institute, and Royal Academy of Engineering Chair in Emerging Technologies, focused on surgical robotics and AI for minimally invasive interventions.</p>
+          <a href="https://www.oasishub.org.uk/people">Profile</a>
+        </article>
       </section>
     </section>
 
@@ -555,12 +565,12 @@
       </div>
       <nav aria-label="Footer">
         <a href="mailto:workshop@dca-in-mi.org">Contact</a>
-        <a href="https://arxiv.org/abs/2503.07667">CLIMB</a>
+        <a href="#datasets" data-route-link="datasets">Datasets</a>
         <a href="https://arxiv.org/abs/2501.09209">SurgVU</a>
       </nav>
     </div>
   </footer>
 
-  <script src="site.js"></script>
+  <script src="site.js?v=20260515-launch-bios"></script>
 </body>
 </html>
