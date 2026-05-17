@@ -439,17 +439,52 @@
       <section class="container cfp-layout">
         <aside class="toc" aria-label="Call for papers contents">
           <a href="#cfp-scope">01 Scope</a>
-          <a href="#cfp-topics">02 Topics</a>
-          <a href="#cfp-format">03 Format</a>
+          <a href="#cfp-tracks">02 Tracks</a>
+          <a href="#cfp-topics">03 Topics</a>
           <a href="#cfp-review">04 Review</a>
           <a href="#cfp-ethics">05 Ethics</a>
         </aside>
         <div class="cfp-body">
-          <article id="cfp-scope"><span class="eyebrow muted">01 - Scope</span><h2>The data itself is the subject.</h2><p class="dropcap">We invite contributions across data curation, augmentation, restoration, benchmarking, 3D perception, multimodal clinical data, learning with limited or imperfect supervision, and clinical translation. Submissions may be empirical, methodological, position-style, or new datasets and benchmarks with reproducible baselines.</p></article>
-          <article id="cfp-topics"><span class="eyebrow muted">02 - Topics</span><h2>Cross-theme work is welcome.</h2><p>We are especially interested in work that shows how upstream data decisions propagate into downstream clinical performance: acquisition, annotation, pseudo-ground-truth generation, quality control, fairness, privacy, synthetic data, simulation, distribution shift, and realistic evaluation.</p></article>
-          <article id="cfp-format"><span class="eyebrow muted">03 - Format</span><h2>Three submission tracks.</h2><p>Full papers, extended abstracts, and dataset / benchmark submissions are welcome. Final page limits, templates, and the exact OpenReview portal will be posted once the venue link is verified.</p></article>
-          <article id="cfp-review"><span class="eyebrow muted">04 - Review</span><h2>Double-blind review.</h2><p>Each submission receives technical and domain review, with dataset papers evaluated for provenance, license clarity, and reproducibility.</p></article>
-          <article id="cfp-ethics"><span class="eyebrow muted">05 - Ethics</span><h2>Provenance is a first-class concern.</h2><p>All datasets must document source, consent basis, licensing, and known coverage limits. Submissions with unclear protected-data handling may be desk-rejected.</p></article>
+          <article id="cfp-scope">
+            <span class="eyebrow muted">01 - Scope</span>
+            <h2>The data itself is the subject.</h2>
+            <p class="dropcap cfp-lede">We invite submissions on data-centric medical imaging AI, with emphasis on curation, augmentation, restoration, benchmarking, 3D perception, multimodal clinical data, limited or imperfect supervision, and clinical translation.</p>
+          </article>
+          <article id="cfp-tracks">
+            <span class="eyebrow muted">02 - Submission Tracks</span>
+            <h2>Two ways to contribute.</h2>
+            <div class="cfp-track-grid">
+              <section class="cfp-track-card" aria-labelledby="regular-track-title">
+                <span class="track-kicker">Regular Track</span>
+                <h3 id="regular-track-title">Peer-reviewed papers</h3>
+                <p>Original work in ECCV workshop format, reviewed through a double-blind OpenReview workflow by the program committee. Full papers, extended abstracts, and dataset or benchmark papers are welcome.</p>
+              </section>
+              <section class="cfp-track-card" aria-labelledby="nectar-track-title">
+                <span class="track-kicker">Nectar Track</span>
+                <h3 id="nectar-track-title">Published work posters</h3>
+                <p>Relevant papers already peer-reviewed at major computer vision, machine learning, medical imaging, robotics, or clinical AI venues. These submissions are checked for topical fit and poster availability rather than re-reviewed.</p>
+              </section>
+            </div>
+          </article>
+          <article id="cfp-topics">
+            <span class="eyebrow muted">03 - Topics of Interest</span>
+            <h2>Cross-theme work is welcome.</h2>
+            <p>We are especially interested in work that shows how upstream data decisions propagate into downstream clinical performance.</p>
+            <ul class="cfp-topic-list">
+              <li>Dataset design, acquisition protocols, and sampling strategy</li>
+              <li>Annotation, pseudo-labeling, quality control, and expert-in-the-loop curation</li>
+              <li>Data augmentation, synthetic data, simulation, and generative data engines</li>
+              <li>Image and video restoration under smoke, blood, blur, specularities, and other degradations</li>
+              <li>3D perception, endoscopic reconstruction, neural rendering, and SLAM</li>
+              <li>Multimodal clinical datasets, vision-language data, and temporal patient data</li>
+              <li>Learning from limited labels, noisy labels, missing data, and imperfect supervision</li>
+              <li>Benchmark design, evaluation standards, reproducibility, and statistical reliability</li>
+              <li>Privacy-preserving learning, federated evaluation, fairness, and dataset governance</li>
+              <li>Clinical translation, workflow understanding, autonomy, safety, and deployment monitoring</li>
+            </ul>
+          </article>
+          <article id="cfp-review"><span class="eyebrow muted">04 - Review</span><h2>Double-blind review.</h2><p>Regular-track submissions receive technical and domain review, with dataset and benchmark papers evaluated for provenance, license clarity, reproducibility, and documented limitations.</p></article>
+          <article id="cfp-ethics"><span class="eyebrow muted">05 - Ethics</span><h2>Provenance is a first-class concern.</h2><p>All dataset-centered submissions must document source, consent basis, licensing, and known coverage limits. Submissions with unclear protected-data handling may be desk-rejected.</p></article>
         </div>
       </section>
     </section>
