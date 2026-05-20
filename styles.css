@@ -203,6 +203,12 @@ button { color: inherit; }
   line-height: .98;
   letter-spacing: 0;
 }
+.hero-copy h1 + .meta-row {
+  margin-top: clamp(24px, 4vw, 40px);
+}
+.hero-copy {
+  min-width: 0;
+}
 .lede {
   max-width: 660px;
   margin: 34px 0 24px;
@@ -657,6 +663,12 @@ blockquote cite {
 }
 
 .dataset-section { margin-top: 16px; }
+#page-datasets > .container.dataset-section,
+#page-dates > .container:first-of-type,
+#page-cfp > .cfp-body,
+#page-organizers > .container.organizer-grid {
+  padding-top: 48px;
+}
 .section-intro {
   display: grid;
   grid-template-columns: .8fr 1.2fr;
