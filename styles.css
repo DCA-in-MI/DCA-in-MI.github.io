@@ -8,8 +8,8 @@
   --ochre: #b88742;
   --rule: #d8d2c4;
   --display: "Fraunces", Georgia, "Times New Roman", serif;
-  --body: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  --mono: "JetBrains Mono", "Courier New", monospace;
+  --body: "Fraunces", Georgia, "Times New Roman", serif;
+  --mono: "Fraunces", Georgia, "Times New Roman", serif;
   --max-w: 1240px;
   --margin-x: 80px;
 }
@@ -1214,7 +1214,7 @@ blockquote cite {
   grid-column: span 2;
 }
 .home-advisory {
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .home-advisory article.featured-advisor {
   grid-column: auto;
