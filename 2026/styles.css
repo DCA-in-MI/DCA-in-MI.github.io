@@ -229,6 +229,9 @@ button { color: inherit; }
 }
 .cta-row { display: flex; flex-wrap: wrap; gap: 16px; }
 .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 52px;
   border: 0;
   border-radius: 0;
@@ -237,6 +240,7 @@ button { color: inherit; }
   font-size: 13px;
   font-weight: 600;
   letter-spacing: .1em;
+  text-decoration: none;
   text-transform: uppercase;
 }
 .btn.primary { background: var(--forest); color: var(--cream); }
@@ -1129,6 +1133,9 @@ blockquote cite {
 }
 .cfp-lede {
   max-width: 860px;
+}
+.cfp-submit-link {
+  margin-top: 18px;
 }
 .cfp-track-grid {
   display: grid;
