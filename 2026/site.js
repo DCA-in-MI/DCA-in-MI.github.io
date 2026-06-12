@@ -85,6 +85,30 @@
     window.setInterval(render, 60000);
   }
 
+  function initCfpCountdown() {
+    const countdown = document.getElementById("cfp-countdown");
+    if (!countdown) return;
+    const deadline = new Date("2026-07-01T23:59:00-12:00");
+
+    function render() {
+      const remaining = deadline.getTime() - Date.now();
+      if (remaining <= 0) {
+        countdown.textContent = "Submission closed";
+        return;
+      }
+      const totalSeconds = Math.floor(remaining / 1000);
+      const days = Math.floor(totalSeconds / 86400);
+      const hours = Math.floor((totalSeconds % 86400) / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+      countdown.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    render();
+    window.setInterval(render, 1000);
+  }
+
   setRoute(location.hash.replace("#", ""), false);
   initDeadlineMeter();
+  initCfpCountdown();
 })();
