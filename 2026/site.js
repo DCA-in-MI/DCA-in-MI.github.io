@@ -60,7 +60,7 @@
     if (!fill || !nextLabel) return;
     const milestones = [
       { date: new Date("2026-05-15T00:00:00-08:00"), label: "Call for papers posted" },
-      { date: new Date("2026-07-01T23:59:00-12:00"), label: "Submission deadline", hard: true },
+      { date: new Date("2026-07-07T23:59:00-12:00"), label: "Submission deadline", hard: true },
       { date: new Date("2026-08-01T00:00:00-08:00"), label: "Acceptance notifications" },
       { date: new Date("2026-08-15T00:00:00-08:00"), label: "Camera-ready due" },
       { date: new Date("2026-09-08T00:00:00-08:00"), label: "Workshop begins" }
