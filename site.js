@@ -88,7 +88,7 @@
   function initCfpCountdown() {
     const countdown = document.getElementById("cfp-countdown");
     if (!countdown) return;
-    const deadline = new Date("2026-07-01T23:59:00-12:00");
+    const deadline = new Date("2026-07-07T23:59:00-12:00");
 
     function render() {
       const remaining = deadline.getTime() - Date.now();
