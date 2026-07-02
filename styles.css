@@ -898,6 +898,18 @@ blockquote cite {
   margin: 0;
   color: var(--slate);
   font-size: 12px;
+  line-height: 1.45;
+}
+.organizer-grid .person-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin-top: 14px;
+}
+.organizer-grid .person-links a {
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
 }
 .organizer-grid a,
 .advisory-board a {
@@ -1337,24 +1349,24 @@ blockquote cite {
 .paper-list article.is-hidden { display: none; }
 
 .organizer-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .advisory-board {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
 }
 .advisory-board article {
-  min-height: 210px;
+  min-height: 180px;
   border-top: 1.4px solid var(--ink);
   background: var(--paper);
-  padding: 24px;
+  padding: 18px;
 }
 .advisory-board article.featured-advisor {
-  grid-column: span 2;
+  grid-column: auto;
 }
 .home-advisory {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .home-advisory article.featured-advisor {
   grid-column: auto;
@@ -1373,38 +1385,45 @@ blockquote cite {
   margin-bottom: 18px;
 }
 .advisory-board img {
-  width: 88px;
-  height: 88px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   filter: saturate(.92) contrast(.98);
 }
 .advisory-board span {
   color: var(--ochre);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: .18em;
   text-transform: uppercase;
 }
 .advisory-board h3 {
-  margin: 28px 0 12px;
+  margin: 18px 0 8px;
   font-family: var(--display);
-  font-size: 25px;
+  font-size: 21px;
   font-weight: 400;
   line-height: 1.08;
+}
+.advisory-board .advisor-affiliation {
+  margin-bottom: 10px;
+  color: var(--forest);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35;
 }
 .advisory-board p {
   margin: 0;
   color: var(--slate);
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 13px;
+  line-height: 1.42;
 }
 .advisory-board a {
   display: inline-block;
-  margin-top: 18px;
-  font-size: 12px;
+  margin-top: 14px;
+  font-size: 11px;
   letter-spacing: .12em;
   text-transform: uppercase;
 }
