@@ -900,28 +900,37 @@ blockquote cite {
   font-size: 12px;
   line-height: 1.45;
 }
-.organizer-grid .person-links {
+.person-links {
   display: flex;
   flex-wrap: wrap;
   gap: 6px 12px;
   margin-top: 14px;
 }
-.organizer-grid .person-links a {
+.person-links a {
   font-size: 11px;
   letter-spacing: .12em;
   text-transform: uppercase;
 }
+.speaker-grid .person-links {
+  margin-top: 14px;
+}
+.speaker-grid .person-links a {
+  font-family: var(--body);
+  font-style: normal;
+}
+.speaker-grid a,
 .organizer-grid a,
 .advisory-board a {
   color: var(--forest);
   font-weight: 700;
   text-decoration: none;
 }
+.speaker-grid a:hover,
 .organizer-grid a:hover,
 .advisory-board a:hover {
   text-decoration: underline;
 }
-.speaker-grid span:last-child {
+.speaker-grid article > span {
   display: block;
   margin-top: 18px;
   font-family: var(--display);
@@ -1353,7 +1362,7 @@ blockquote cite {
 }
 .advisory-board {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 .advisory-board article {
@@ -1366,7 +1375,7 @@ blockquote cite {
   grid-column: auto;
 }
 .home-advisory {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .home-advisory article.featured-advisor {
   grid-column: auto;
@@ -1426,6 +1435,9 @@ blockquote cite {
   font-size: 11px;
   letter-spacing: .12em;
   text-transform: uppercase;
+}
+.advisory-board .person-links a {
+  margin-top: 0;
 }
 
 .faq {
@@ -1543,8 +1555,7 @@ footer {
     flex-direction: column;
     gap: 4px;
   }
-  .speaker-grid,
-  .advisory-board { grid-template-columns: repeat(2, 1fr); }
+  .speaker-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 860px) {
