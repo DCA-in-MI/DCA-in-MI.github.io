@@ -231,12 +231,12 @@ button { color: inherit; }
   line-height: 1.42;
 }
 
-/* Expand the workshop title across the desktop hero while retaining mobile line breaks. */
-@media (min-width: 1181px) {
+/* Wide desktop: a full-width title with a compact, balanced figure row. */
+@media (min-width: 1600px) {
   #page-home > .container:first-child { max-width: 1600px; }
   .hero-grid {
     position: relative;
-    padding-top: clamp(150px, 12vw, 210px);
+    padding-top: clamp(140px, 8vw, 170px);
   }
   .hero-copy h1 {
     position: absolute;
@@ -248,6 +248,31 @@ button { color: inherit; }
     white-space: nowrap;
   }
   .hero-copy h1 br { display: none; }
+  .hero-grid .hero-figures {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .hero-figures .figure-tile img {
+    height: clamp(170px, 11vw, 210px);
+  }
+  .hero-figures .figure-tile figcaption {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+/* Middle screens: preserve the original left-title/right-figures composition. */
+@media (min-width: 861px) and (max-width: 1599px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    gap: clamp(32px, 4vw, 54px);
+  }
+  .hero-copy h1 {
+    font-size: clamp(44px, 5vw, 72px);
+    line-height: .96;
+  }
 }
 
 .meta-row {
@@ -1561,8 +1586,13 @@ footer {
   :root { --margin-x: 34px; }
   .nav-menu { gap: 10px; }
   .nav-menu button { font-size: 11px; }
-  .hero-grid,
   .dataset-primary { grid-template-columns: 1fr; }
+  .speaker-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 860px) {
+  :root { --margin-x: 24px; }
+  .hero-grid { grid-template-columns: 1fr; }
   .hero-figures {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1574,11 +1604,6 @@ footer {
     flex-direction: column;
     gap: 4px;
   }
-  .speaker-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 860px) {
-  :root { --margin-x: 24px; }
   .topbar-inner,
   .hero-meta,
   .section-div,
