@@ -230,6 +230,26 @@ button { color: inherit; }
   font-size: clamp(19px, 1.7vw, 23px);
   line-height: 1.42;
 }
+
+/* Expand the workshop title across the desktop hero while retaining mobile line breaks. */
+@media (min-width: 1181px) {
+  #page-home > .container:first-child { max-width: 1600px; }
+  .hero-grid {
+    position: relative;
+    padding-top: clamp(150px, 12vw, 210px);
+  }
+  .hero-copy h1 {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    font-size: clamp(44px, 3.8vw, 62px);
+    line-height: .95;
+    white-space: nowrap;
+  }
+  .hero-copy h1 br { display: none; }
+}
+
 .meta-row {
   display: flex;
   flex-wrap: wrap;
