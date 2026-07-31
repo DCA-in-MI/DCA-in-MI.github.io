@@ -1664,6 +1664,7 @@ footer {
   .home-advisory {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .speaker-grid article,
   .organizer-grid article,
   .organizer-grid article.person-feature,
   .advisory-board article {
@@ -1672,24 +1673,31 @@ footer {
     padding: clamp(22px, 5vw, 54px);
     text-align: left;
   }
+  .speaker-grid img,
   .organizer-grid img,
   .advisory-board img {
     width: clamp(68px, 13vw, 118px);
     height: clamp(68px, 13vw, 118px);
     margin-bottom: clamp(24px, 5vw, 48px);
   }
+  .speaker-grid h3,
   .organizer-grid h3,
   .advisory-board h3 {
     margin: 0 0 12px;
     font-size: clamp(28px, 5.2vw, 46px);
     line-height: 1.08;
   }
+  .speaker-grid p,
+  .speaker-grid article > span,
   .organizer-grid p,
   .advisory-board p {
     max-width: 360px;
     color: var(--slate);
     font-size: clamp(16px, 2.7vw, 24px);
     line-height: 1.45;
+  }
+  .speaker-grid article > span {
+    margin-top: 18px;
   }
   .home-organizer-grid p,
   .home-advisory p {
