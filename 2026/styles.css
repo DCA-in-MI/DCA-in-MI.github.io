@@ -10,6 +10,7 @@
   --display: "Fraunces", Georgia, "Times New Roman", serif;
   --body: "Fraunces", Georgia, "Times New Roman", serif;
   --mono: "Fraunces", Georgia, "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --max-w: 1240px;
   --margin-x: 80px;
 }
@@ -1090,6 +1091,58 @@ blockquote cite {
 .schedule .dim h3,
 .schedule .dim p { color: var(--slate); }
 
+.schedule-speaker {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.schedule-avatar {
+  flex: 0 0 auto;
+}
+.schedule-avatar img {
+  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.schedule-head span,
+.schedule article h3,
+.schedule article p,
+.schedule article > span,
+.schedule article > span small,
+.schedule article em {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.schedule article h3 {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.accepted-paper-list {
+  margin-top: 34px;
+  border-top: 1px solid var(--rule);
+}
+.accepted-paper-list article {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.accepted-paper-list h3 {
+  margin: 0 0 6px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.accepted-paper-list p {
+  margin: 0;
+  color: var(--slate);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1747,4 +1800,39 @@ footer {
   .date-table em { text-align: left; }
   .faq div p { padding-left: 0; padding-right: 0; }
   .footer-inner nav { flex-direction: column; gap: 10px; }
+}
+
+/* Readability: simplified sans-serif for body text, labels, and nav (headings keep the display serif) */
+.topbar,
+.nav-menu button,
+.nav-menu a,
+.nav-toggle,
+.brand-meta,
+.mono,
+.eyebrow,
+.section-note,
+.date-block h3,
+.speaker-grid p,
+.speaker-grid article > span,
+.organizer-grid p,
+.person-links a,
+.advisory-board span,
+.advisory-board .advisor-affiliation,
+.advisory-board p,
+.advisory-board a,
+.dataset-sub,
+.dataset-card p:not(.dataset-sub),
+.dataset-card a,
+.stat-grid span,
+.source-note,
+.cfp-submit-bar p,
+.cfp-body p,
+.cfp-topic-list li,
+.cfp-track-card .track-kicker,
+.cfp-deadline-bar .track-kicker,
+.cfp-deadline-date,
+.cfp-countdown,
+.cfp-faq-list summary,
+.cfp-faq-list details p {
+  font-family: var(--sans);
 }
