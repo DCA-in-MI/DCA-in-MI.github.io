@@ -443,6 +443,12 @@ a.btn { color: inherit; }
   font-weight: 600;
   line-height: 1.5;
 }
+#page-program .section-div {
+  margin-bottom: 28px;
+}
+#page-program .venue-note {
+  margin-top: 0;
+}
 .theme-list {
   display: grid;
   gap: 28px;
