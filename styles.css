@@ -426,6 +426,14 @@ a.btn { color: inherit; }
   color: var(--slate);
   font-size: 14px;
 }
+.venue-note {
+  max-width: 720px;
+  margin: -8px 0 24px;
+  color: var(--slate);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.5;
+}
 .theme-list {
   display: grid;
   gap: 28px;
